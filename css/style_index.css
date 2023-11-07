@@ -8,6 +8,76 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+.contenedor_padre {
+    display: grid;
+    padding: 20px;
+    width: 800px;
+    height: 700px;
+    background-color: rgb(22, 22, 22);
+    background: radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
+    background: -webkit-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
+    background: -moz-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
+    width: 800px;
+    height: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: "imagen contenedor contenedor";
+}
+
+.contenedor_padre img {
+    width: 100%;
+    height: 100%;
+    grid-area: imagen;
+}
+
+.contenedor_padre .objetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-area: contenedor;
+}
+
+.contenedor_padre .objetos .contenedor{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------- Index ------- */
 
 
@@ -259,7 +329,6 @@ main{
 
 .caracteristicas {
     position: absolute;
-    display: inline-block;
     width: 800px;
     height: 700px;
     background-color: rgb(22, 22, 22);
@@ -271,18 +340,19 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 50px 500px;
 }
 
+
 .caracteristicas .caracteristica_principales {
-    display: inline-block;
-    background: url(https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg);
-    background-size: cover;
-    width: 350px;
-    height: 680px;
-    border-radius: 10px;
-    background-size: cover;
-    margin: 10px;
-    box-shadow: inset 0 0 6px 6px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+
+.caracteristicas .imagen_caracteristica_principales {
+
 }
 
 .caracteristicas article {
@@ -294,6 +364,7 @@ main{
 }
 
 .caracteristicas article .caja_de_espec {
+    background-color: red;
     width: 150px;
     display: inline-block;
     margin: 40px 10px;
@@ -407,3 +478,4 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
