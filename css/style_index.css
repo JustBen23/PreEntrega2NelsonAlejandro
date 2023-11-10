@@ -8,76 +8,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.contenedor_padre {
-    display: grid;
-    padding: 20px;
-    width: 800px;
-    height: 700px;
-    background-color: rgb(22, 22, 22);
-    background: radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    background: -webkit-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    background: -moz-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    width: 800px;
-    height: 800px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    grid-template-areas: "imagen contenedor contenedor";
-}
-
-.contenedor_padre img {
-    width: 100%;
-    height: 100%;
-    grid-area: imagen;
-}
-
-.contenedor_padre .objetos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    grid-area: contenedor;
-}
-
-.contenedor_padre .objetos .contenedor{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------- Index ------- */
 
 
@@ -321,68 +251,61 @@ main{
 }
 
 /* Pagina "Especificaciones" */
+
 .bg_especificaciones{
     background-image: url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.caracteristicas {
+.caracteristica_principales {
+    display: grid;
     position: absolute;
-    width: 800px;
-    height: 700px;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    padding: 20px;
+    width: 950px;
+    height: 750px;
     background-color: rgb(22, 22, 22);
     background: radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
     background: -webkit-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
     background: -moz-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    border-radius: 10px;
-    filter:drop-shadow(0 1px 5px black);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas: "imagen contenedor contenedor";
+    
+}
+
+.caracteristica_principales .imagen_caracteristica_principales{
+    background: url("https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg");
+    box-shadow: inset 0px 0px 10px 0px rgb(0, 0, 0);
+    transition-duration: .7s;
+}
+
+.caracteristica_principales img {
+    width: 95%;
+    height: 95%;
+    grid-area: imagen;
+}
+
+.caracteristica_principales .especificaciones {
     display: grid;
-    grid-template-columns: 50px 500px;
-}
-
-
-.caracteristicas .caracteristica_principales {
-    
-    
-}
-
-
-.caracteristicas .imagen_caracteristica_principales {
-
-}
-
-.caracteristicas article {
-    display: inline-block;
-    position: absolute;
-    width: 450px;
-    height: 680px;
-    margin: 10px;
-}
-
-.caracteristicas article .caja_de_espec {
-    background-color: red;
-    width: 150px;
-    display: inline-block;
-    margin: 40px 10px;
-}
-
-.caracteristicas article h3 {
-    display: inline-block;
-    position: relative;
-    font-size: 15px;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    left: 18%;
-    
+    padding: 15px;
+    grid-area: contenedor;
 }
 
-.caracteristicas article img:not(.filtro_de_imagen) {
-    width: 200px;
-    filter:drop-shadow(0 1px 2px black);
+.caracteristica_principales .especificaciones .caja_de_espec {
+    transition-duration: .5s;
+}
+
+.caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1.2;
+    transition-duration: .5s;
 }
 
 .filtro_de_imagen {
