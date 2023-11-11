@@ -4,6 +4,8 @@
         <title>Subscribete</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Iconos -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="./css/bootstrap.css">
         <!-- Estilos personalizados -->
@@ -13,8 +15,11 @@
     <!-- Barra de navegación -->
     <header>
         <nav class="nav_Bar">
+            <!-- Input para menu mobile -->
+            <input type="checkbox" id="menu_check"> 
+            <label for="menu_check"><i class="bx bx-menu"></i></label>
             <a href="../index.html" class="logo"><img src="https://1000logos.net/wp-content/uploads/2016/09/Acer-Logo.png" alt="Acer-Logo"></a>
-            <ul>
+            <ul class="contenedor_de_nav">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="modelos.html">Modelos</a></li>
                 <li><a href="especificaciones.html">Especificaciones</a></li>

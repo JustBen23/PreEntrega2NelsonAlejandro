@@ -28,6 +28,7 @@ main{
 
 /* Barra de Navegación */
 .nav_Bar {
+    display: flex;
     width: 100%;
     height: 50px;
     filter: drop-shadow(0 1px 3px black);
@@ -39,28 +40,44 @@ main{
     z-index: 10;
 }
 
+
+/* Para el menu mobile */
+#menu_check, .nav_Bar label {
+    margin-left: 20px;
+    scale: 2;
+    display: none;
+}
+/* ------------------- */
+
+
 /* Posición de los links en la barra de navegación */
-.nav_Bar ul{
-    display: inline-block;
+.nav_Bar .contenedor_de_nav{
+    display: flex;
     position: fixed;
     right: 0;
-    margin-top: 5px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.nav_Bar ul li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 10px 0;
+.nav_Bar .contenedor_de_nav li {
+    display: flex;
+    margin: 0px 17px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.nav_Bar ul li a {
+.nav_Bar .contenedor_de_nav li a {
     text-decoration: none;
     margin: 0;
     padding: 0;
     color: white;
 }
 
-.nav_Bar ul li a:hover:not(.logo) {
+.nav_Bar .contenedor_de_nav li a:hover:not(.logo) {
     text-shadow: 0 0 100px rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -68,7 +85,7 @@ main{
 /* Posición de logo en la barra de navegación */
 
 .nav_Bar .logo img {
-    display: inline-block;
+    display: flex;
     margin-left: 15px;
     width: auto;
     height: 50px;
@@ -110,7 +127,6 @@ main{
     justify-content: center;
     overflow: hidden;
     align-items: center;
-
 }
 
 .articulo_principal {
@@ -428,3 +444,57 @@ footer {
     align-items: center;
 }
 
+/* Media Queries */
+
+@media (max-width:768px) {
+    .nav_Bar label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu_check {
+        z-index: 10000;
+    }
+
+    #menu_check i {
+
+    }
+
+    #menu_check:checked~.contenedor_de_nav{
+        background-color: rgba(141, 26, 26, 0.5);
+        position: absolute;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 50px;
+        justify-content: start;
+        /* align-items: start; */
+    }
+    
+    .nav_Bar .contenedor_de_nav{
+        display: none;
+    }
+    
+    .nav_Bar ul li {
+        
+    }
+    
+    .nav_Bar ul li a {
+        
+    }
+    
+    .nav_Bar ul li a:hover:not(.logo) {
+        
+    }
+    
+    .nav_Bar .logo img {
+        position: fixed;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(70%,50%);
+        margin: 0;
+    }
+}
