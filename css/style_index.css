@@ -213,12 +213,13 @@ header {
 
 .articulo_principal article {
     position: relative;
-    width: 300px;
+    width: 500px;
     height: auto;
+    
 }
 
 .articulo_principal article h2 {
-    margin: 7px;
+    margin: 20px 7px;
 }
 
 .articulo_principal article p {
@@ -536,7 +537,6 @@ footer {
         left: 0;
         top: 50px;
         justify-content: start;
-        /* align-items: start; */
     }
     
     .nav_Bar .contenedor_de_nav{
@@ -563,6 +563,10 @@ footer {
 
     .articulo_principal {
         flex-direction: column;
+    }
+
+    .articulo_principal article h2 {
+        text-align: center;
     }
 
     .redes_sociales article a.subscribete:hover {
