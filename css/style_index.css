@@ -565,6 +565,10 @@ footer {
         flex-direction: column;
     }
 
+    .articulo_principal article {
+        width: 90%;
+    }
+
     .articulo_principal article h2 {
         text-align: center;
     }
