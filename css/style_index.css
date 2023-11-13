@@ -242,6 +242,7 @@ header {
 .redes_sociales article a.subscribete {
     text-decoration: none;
     display: inline-block;
+    display: flex;
     color: white;
     width: 100%;
     height: 40px;
@@ -249,7 +250,19 @@ header {
     margin-bottom: 10px;
     text-align: center;
     clip-path: polygon(0 0, 0 80%, 5% 100%, 100% 100%, 100% 25%, 95% 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
 }
+
+.redes_sociales article a.subscribete:hover {
+    scale: 1.1;
+    font-weight: bolder;
+    transition-duration: .3s;
+}
+
+
 
 .redes_sociales .contactos{
     grid-area: contacto;
@@ -270,33 +283,41 @@ header {
 
 /* Pagina "Modelos" */
 
+.titulo_modelos {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15%;
+    width: 100%;
+    height: 15vh;
+    font-size: 64px;
+    background-color: rgba(255, 0, 0, 0.425);
+}
+
+.titulo_modelos span {
+    text-align: center;
+}
+
 .modelos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 80px 0;
+    gap: 50px;
+}
+
+.imagen_principal_modelo {
+    background: url(https://www.cnet.com/a/img/resize/8b4fabbc630942152fcff6e299f97e7197d70569/hub/2020/01/28/5284e5a2-1519-4d09-a07e-d50b317c954e/01-acer-nitro-5-an517-51-56yw.jpg?auto=webp&fit=crop&height=675&width=1200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
     margin-top: 50px;
-}
-
-
-
-/* Pagina "Nosotros" */
-.quienes_somos {
-    display: inline-block;
-
-}
-
-.quienes_somos img {
-    width: 500px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.quienes_somos article {
-    position: relative;
-    margin-top: 50px;
-    width: 50%;
-}
-
-.quienes_somos article h1 {
-    margin: 50px 0;
-    font-size: 50px;
 }
 
 /* Pagina "Especificaciones" */
@@ -329,6 +350,10 @@ header {
 .caracteristica_principales .imagen_caracteristica_principales{
     background: url("https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg");
     box-shadow: inset 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+.caracteristica_principales .imagen_caracteristica_principales span {
+    display: none;
 }
 
 .caracteristica_principales img {
@@ -439,27 +464,33 @@ header {
 /* Pagina nosotros */
 
 .quienes_somos {
-    display: grid;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 100%;
     height: 90vh;
-    margin-top: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    margin: 0;
+    /* margin-top: 50px; */
+}
+
+.contenedor_de_nosotros {
+    width: 100%;
+    height: 80vh;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
 .quienes_somos .imagen_presentacion {
     width: 100%;
-    height: 100%;
-    display: flex;
-    background: url("https://bitcoin.es/wp-content/uploads/2021/03/ransomware-ataca-a-ACER-ID.png");
-}
-
-.quienes_somos article {
-    width: 100%;
-    height: 100%;
+    height: 87vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
+    background-repeat: no-repeat;
+    background-position: end;
+    background-size: cover;
 }
 
 /* Footer de las paginas */ 
@@ -512,7 +543,7 @@ footer {
         position: fixed;
         right: 50%;
         bottom: 50%;
-        transform: translate(75%,50%);
+        transform: translate(55%,50%);
         margin-left: 0;
     }
 
@@ -528,6 +559,11 @@ footer {
 
     .articulo_principal {
         flex-direction: column;
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
     }
 
     .bg_especificaciones{
@@ -552,6 +588,22 @@ footer {
     .caracteristica_principales .imagen_caracteristica_principales {
         width: 100%;
         height: 100%;
+        font-size: 24px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caracteristica_principales .imagen_caracteristica_principales span {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
     }
 
     .caracteristica_principales .especificaciones {
@@ -562,5 +614,53 @@ footer {
         text-align: center;
         padding: 15px;
         grid-area: contenedor;
+    }
+
+    .caracteristica_principales .especificaciones .caja_de_espec:hover {
+        scale: 1;
+        filter: none;
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .quienes_somos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .contenedor_de_nosotros {
+        width: 100%;
+        height: 100vh;
+        margin: 50px 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        overflow: scroll;
+    }
+
+    .quienes_somos .imagen_presentacion {
+        width: 100%;
+        height: 50vh;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
+        background-repeat: no-repeat;
+        background-position: end;
+        background-size: cover;
     }
 }
