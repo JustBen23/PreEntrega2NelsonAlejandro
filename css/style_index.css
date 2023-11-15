@@ -273,6 +273,16 @@ header {
     grid-area: contacto;
 }
 
+.redes_sociales .contactos .numero_telefonico{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .redes_sociales article ul li{
     display: inline-block;
     margin: 0 10px;
