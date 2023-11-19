@@ -462,18 +462,9 @@ header {
 .fondo_formulario {
     position: absolute;
     background-color: #75000081;
-    width: 900px;
+    width: 60vw;
     height: 100%;
-}
-
-.fondo_formulario_2 {
-    position: absolute;
-    margin-left: 900px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 1000px 0 0 100px;
-    border-color: transparent transparent transparent #75000081;
+    clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 80% 0);
 }
 
 /* Pagina nosotros */

@@ -1,691 +1,633 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 /* Reset */
-* {    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Espacio para pruebas */
-
-
 /* Fin de espacio para pruebas */
-
-
 /* ------- Index ------- */
-
 body {
-    background-color: rgb(48, 0, 0);
-    font-family: 'Raleway', sans-serif;
-    color: rgb(255, 255, 255);
-
-    /* Esto permite que el footer se mantenga siempre al fondo de la página */
-    position: relative;
-    min-height: 100vh;
-
-}
-.index_orden{    
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  background-color: rgb(48, 0, 0);
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  /* Esto permite que el footer se mantenga siempre al fondo de la página */
+  position: relative;
+  min-height: 100vh;
 }
 
-main{
-    /* Esto permite que el footer se mantenga siempre al fondo de la página */
-    padding-bottom: 2.5rem;
-    grid-area: main;
+.index_orden {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "footer";
+}
+
+main {
+  /* Esto permite que el footer se mantenga siempre al fondo de la página */
+  padding-bottom: 2.5rem;
+  grid-area: main;
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
-
 /* Header*/
-
-
+/* Para el menu mobile */
+#menu_check, .nav_Bar label {
+  margin-left: 20px;
+  scale: 2;
+  display: none;
+}
 
 /* Barra de Navegación */
 .nav_Bar {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    filter: drop-shadow(0 1px 3px black);
-    background-color: rgb(61, 0, 0);
-    
-    /* estas propiedades mantienen la barra de navegación por encima de todo y que mantenga su posicion en la parte superior de la pantalla */
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  filter: drop-shadow(0 1px 3px black);
+  background-color: rgb(61, 0, 0);
+  /* estas propiedades mantienen la barra de navegación por encima de todo y que mantenga su posicion en la parte superior de la pantalla */
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  /* Posición de los links en la barra de navegación */
+  /* Posición de logo en la barra de navegación */
 }
-
-
-/* Para el menu mobile */
-#menu_check, .nav_Bar label {
-    margin-left: 20px;
-    scale: 2;
-    display: none;
+.nav_Bar .contenedor_de_nav {
+  display: flex;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-/* ------------------- */
-
-
-/* Posición de los links en la barra de navegación */
-.nav_Bar .contenedor_de_nav{
-    display: flex;
-    position: fixed;
-    right: 0;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 .nav_Bar .contenedor_de_nav li {
-    display: flex;
-    margin: 0px 17px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  margin: 0px 17px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-
 .nav_Bar .contenedor_de_nav li a {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
-
 .nav_Bar .contenedor_de_nav li a:hover:not(.logo) {
-    text-shadow: 0 0 100px rgb(0, 0, 0);
-    font-weight: bold;
+  text-shadow: 0 0 100px rgb(0, 0, 0);
+  font-weight: bold;
 }
-
-/* Posición de logo en la barra de navegación */
-
 .nav_Bar .logo img {
-    display: flex;
-    margin-left: 15px;
-    width: auto;
-    height: 50px;
+  display: flex;
+  margin-left: 15px;
+  width: auto;
+  height: 50px;
 }
 
 /* Sección principal */
 .primer_contenido img {
-    margin-top: 50px;
-    width: 100%;
-    height: 60vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-/* Fin del header*/
-
-
-
+  margin-top: 50px;
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} /* Fin del header*/
 /* Productos nuevos */
-
 /* Tarjetas */
-
-.novedades{
-    color: rgb(255, 255, 255);
-    width: 100%;
-    /* height: 500px; */
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+.novedades {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  /* height: 500px; */
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
-
 .novedades .contenido_tarjeta {
-    width: 300px;
-    height: 400px;
-    background: rgb(82, 0, 0);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
-    filter: drop-shadow(0 0 5px 10px black);
+  width: 300px;
+  height: 400px;
+  background: rgb(82, 0, 0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
+  filter: drop-shadow(0 0 5px 10px black);
 }
-
-.novedades .contenido_tarjeta .tarjeta{
-    width: 100%; 
-    height: 100%;
-    background-color: rgb(255, 0, 0);
-    padding: 30px;
-    padding-top: 20px;
-    clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
-    transform: translate(0, 80%);
-    transition-duration:.3s;
+.novedades .contenido_tarjeta .tarjeta {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+  padding: 30px;
+  padding-top: 20px;
+  clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
+  transform: translate(0, 80%);
+  transition-duration: 0.3s;
 }
-
-.contenido_tarjeta .tarjeta h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.novedades .contenido_tarjeta .tarjeta h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.contenido_tarjeta .tarjeta p {
-    padding-top: 7%;
+.novedades .contenido_tarjeta .tarjeta p {
+  padding-top: 7%;
 }
-
 .novedades .contenido_tarjeta .tarjeta:hover {
-    transform: translate(0, 20%);
-    transition-duration:.3s;
-    background-color: rgba(255, 0, 0, 0.699);
+  transform: translate(0, 20%);
+  transition-duration: 0.3s;
+  background-color: rgba(255, 0, 0, 0.699);
 }
-
 
 /* Fin tarjetas */
-
 /* Segundo articulo */
 .articulo_principal {
-    display: flex;
-    width: 100%;
-    padding: 80px 0;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 0 50px;
-    background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0 50px;
+  background-color: rgb(0, 0, 0);
 }
-
-.articulo_principal img{
-    display: flex;
-    width: 300px;
-    margin-bottom: 0;
+.articulo_principal img {
+  display: flex;
+  width: 300px;
+  margin-bottom: 0;
 }
-
 .articulo_principal article {
-    position: relative;
-    width: 500px;
-    height: auto;
-    
+  position: relative;
+  width: 500px;
+  height: auto;
 }
-
 .articulo_principal article h2 {
-    margin: 20px 7px;
+  margin: 20px 7px;
 }
-
 .articulo_principal article p {
-    margin: 7px;
+  margin: 7px;
 }
 
 /* Redes sociales */
 .redes_sociales {
-    width: 100%;
-    position: relative;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 70px;
-    text-align: center;
+  width: 100%;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 70px;
+  text-align: center;
 }
-
-
 .redes_sociales article img {
-    width: 200px;
-    margin: 0;
+  width: 200px;
+  margin: 0;
 }
-
 .redes_sociales article a.subscribete {
-    text-decoration: none;
-    display: inline-block;
-    display: flex;
-    color: white;
-    width: 100%;
-    height: 40px;
-    background-color: red;
-    margin-bottom: 10px;
-    text-align: center;
-    clip-path: polygon(0 0, 0 80%, 5% 100%, 100% 100%, 100% 25%, 95% 0);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    transition-duration: .3s;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  margin-bottom: 10px;
+  text-align: center;
+  clip-path: polygon(0 0, 0 80%, 5% 100%, 100% 100%, 100% 25%, 95% 0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
 }
-
 .redes_sociales article a.subscribete:hover {
-    scale: 1.1;
-    font-weight: bolder;
-    transition-duration: .3s;
+  scale: 1.1;
+  font-weight: bolder;
+  transition-duration: 0.3s;
 }
-
-
-
-.redes_sociales .contactos{
-    grid-area: contacto;
+.redes_sociales article ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
-
-.redes_sociales .contactos .numero_telefonico{
-    display: flex;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.redes_sociales article ul li{
-    display: inline-block;
-    margin: 0 10px;
-}
-
 .redes_sociales article ul li a img {
-    width: 30px;
+  width: 30px;
 }
-
+.redes_sociales .contactos {
+  grid-area: contacto;
+}
+.redes_sociales .contactos .numero_telefonico {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
 /* ------- Fin del Index ------- */
-
-
 /* Pagina "Modelos" */
-
 .titulo_modelos {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 15%;
-    width: 100%;
-    height: 15vh;
-    font-size: 64px;
-    background-color: rgba(255, 0, 0, 0.425);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15%;
+  width: 100%;
+  height: 15vh;
+  font-size: 64px;
+  background-color: rgba(255, 0, 0, 0.425);
 }
-
 .titulo_modelos span {
-    text-align: center;
+  text-align: center;
 }
 
 .modelos {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin: 80px 0;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 80px 0;
+  gap: 50px;
 }
 
 .imagen_principal_modelo {
-    background: url(https://www.cnet.com/a/img/resize/8b4fabbc630942152fcff6e299f97e7197d70569/hub/2020/01/28/5284e5a2-1519-4d09-a07e-d50b317c954e/01-acer-nitro-5-an517-51-56yw.jpg?auto=webp&fit=crop&height=675&width=1200);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vh;
-    margin-top: 50px;
+  background: url(https://www.cnet.com/a/img/resize/8b4fabbc630942152fcff6e299f97e7197d70569/hub/2020/01/28/5284e5a2-1519-4d09-a07e-d50b317c954e/01-acer-nitro-5-an517-51-56yw.jpg?auto=webp&fit=crop&height=675&width=1200);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 50px;
 }
 
 /* Pagina "Especificaciones" */
-
-.bg_especificaciones{
-    background-image: url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg_especificaciones {
+  background-image: url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .caracteristica_principales {
-    display: grid;
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%,50%);
-    padding: 20px;
-    width: 50%;
-    height: 80vh;
-    background-color: rgb(22, 22, 22);
-    background: radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    background: -webkit-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    background: -moz-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    grid-template-areas: "imagen contenedor contenedor";
-    overflow: hidden;
+  display: grid;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  padding: 20px;
+  width: 50%;
+  height: 80vh;
+  background-color: rgb(22, 22, 22);
+  background: radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
+  background: -webkit-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
+  background: -moz-radial-gradient(circle farthest-corner at top right, rgb(37, 37, 37) 0%, rgb(22, 22, 22) 80%);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-areas: "imagen contenedor contenedor";
+  overflow: hidden;
 }
-
-.caracteristica_principales .imagen_caracteristica_principales{
-    background: url("https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg");
-    box-shadow: inset 0px 0px 10px 0px rgb(0, 0, 0);
+.caracteristica_principales .imagen_caracteristica_principales {
+  background: url("https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg");
+  box-shadow: inset 0px 0px 10px 0px rgb(0, 0, 0);
 }
-
 .caracteristica_principales .imagen_caracteristica_principales span {
-    display: none;
+  display: none;
 }
-
 .caracteristica_principales img {
-    width: 95%;
-    height: 95%;
-    grid-area: imagen;
+  width: 95%;
+  height: 95%;
+  grid-area: imagen;
+}
+.caracteristica_principales .especificaciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  grid-area: contenedor;
+}
+.caracteristica_principales .especificaciones .caja_de_espec {
+  transition-duration: 0.2s;
+}
+.caracteristica_principales .especificaciones .caja_de_espec:hover {
+  scale: 1.2;
+  transition-duration: 0.2s;
+  filter: drop-shadow(0 1px 15px rgb(43, 43, 43));
 }
 
-.caracteristica_principales .especificaciones {
+.filtro_de_imagen {
+  width: 200px;
+  filter: brightness(500%);
+  filter: contrast(200%);
+  filter: drop-shadow(0 1px 2px rgb(0, 0, 0));
+}
+
+/* Pagina "Subscribete" */
+.bg_subscribete {
+  background-image: url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formulario {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  left: 5%;
+}
+.formulario article {
+  position: absolute;
+  margin-top: 50px;
+  width: 100%;
+}
+.formulario article h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+.formulario article p {
+  width: 45%;
+  margin: 10px 0;
+}
+.formulario article form {
+  margin-top: 40px;
+  width: 100%;
+}
+.formulario article form .form_item {
+  display: flow-root;
+  width: 500px;
+  height: 30px;
+  margin: 10px 0;
+}
+.formulario article form .form_submit_buttom {
+  display: flow-root;
+  width: 200px;
+  height: 30px;
+  margin: 40px 0;
+}
+
+/* Exclusivo para el fondo de la pagina "Subscribete" */
+.main_subscribete {
+  display: inline-block;
+}
+
+.fondo_formulario {
+  position: absolute;
+  background-color: rgba(117, 0, 0, 0.5058823529);
+  width: 60vw;
+  height: 100%;
+  clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 80% 0);
+}
+
+/* Pagina nosotros */
+.quienes_somos {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+}
+.quienes_somos .imagen_presentacion {
+  width: 100%;
+  height: 87vh;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+}
+
+.contenedor_de_nosotros {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Footer de las paginas */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  counter-reset: none;
+  display: flex;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.795);
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav_Bar label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu_check {
+    z-index: 10000;
+  }
+  #menu_check:checked ~ .contenedor_de_nav {
+    background-color: rgba(141, 26, 26, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 50px;
+    justify-content: start;
+  }
+  .nav_Bar .contenedor_de_nav {
+    display: none;
+  }
+  .nav_Bar .logo img {
+    position: fixed;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(55%, 50%);
+    margin-left: 0;
+  }
+  /* Sección principal */
+  .primer_contenido img {
+    height: 25vh;
+  }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .articulo_principal {
+    flex-direction: column;
+  }
+  .articulo_principal article {
+    width: 90%;
+  }
+  .articulo_principal article h2 {
+    text-align: center;
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 15px;
     grid-area: contenedor;
-}
-
-.caracteristica_principales .especificaciones .caja_de_espec {
-    transition-duration: .2s;
-}
-
-.caracteristica_principales .especificaciones .caja_de_espec:hover {
-    scale: 1.2;
-    transition-duration: .2s;
-    filter: drop-shadow(0 1px 15px rgb(43, 43, 43));
-}
-
-.filtro_de_imagen {
-    width: 200px;
-    filter: brightness(500%);
-    filter: contrast(200%);
-    filter: drop-shadow(0 1px 2px rgb(0, 0, 0));
-}
-
-/* Pagina "Subscribete" */
-.bg_subscribete {
-    background-image: url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.formulario {
-    position: absolute;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    top: 15%;
-    left: 5%;
-}
-
-.formulario article {
-    position: absolute;
-    margin-top: 50px;
-    width: 100%;
-}
-
-.formulario article h1{
-    font-size: 40px;
-    margin: 20px 0;
-}
-
-.formulario article p{
-    margin: 10px 0;
-}
-
-.formulario article form {
-    margin-top: 40px;
-    width:100%;
-}
-
-.formulario article form .form_item {
-    display: flow-root;
-    width: 500px;
-    height:30px;
-    margin: 10px 0;
-}
-
-.formulario article form .form_submit_buttom {
-    display: flow-root;
-    width: 200px;
-    height:30px;
-    margin: 40px 0;
-}
-
-/* Exclusivo para el fondo de la pagina "Subscribete" */ 
-
-.main_subscribete{
-    display: inline-block;
-}
-
-.fondo_formulario {
-    position: absolute;
-    background-color: #75000081;
-    width: 900px;
-    height: 100%;
-}
-
-.fondo_formulario_2 {
-    position: absolute;
-    margin-left: 900px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 1000px 0 0 100px;
-    border-color: transparent transparent transparent #75000081;
-}
-
-/* Pagina nosotros */
-
-.quienes_somos {
-    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .quienes_somos {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     width: 100%;
     height: 90vh;
-    margin: 0;
-    /* margin-top: 50px; */
-}
-
-.contenedor_de_nosotros {
+  }
+  .quienes_somos .imagen_presentacion {
     width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
-
-.quienes_somos .imagen_presentacion {
-    width: 100%;
-    height: 87vh;
+    height: 40vh;
     background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
     background-repeat: no-repeat;
-    background-position: end;
+    background-position: 0 15vh;
     background-size: cover;
-}
-
-/* Footer de las paginas */ 
-
-footer {
-    position: absolute;
-    bottom: 0;
+  }
+  .contenedor_de_nosotros {
     width: 100%;
-    height: 70px; 
-    counter-reset: none;
+    height: 100vh;
+    margin: 50px 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    overflow: scroll;
+    margin-bottom: 30vh;
+    margin-top: 25vh;
+    text-align: center;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
     display: flex;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.795);
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    grid-area: footer;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 10px 0 20px 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 20px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 300px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
+  }
 }
 
-/* Media Queries */
-
-@media (max-width:768px) {
-    .nav_Bar label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu_check {
-        z-index: 10000;
-    }
-
-    #menu_check:checked~.contenedor_de_nav{
-        background-color: rgba(141, 26, 26, 0.5);
-        position: absolute;
-        width: 100%;
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        left: 0;
-        top: 50px;
-        justify-content: start;
-    }
-    
-    .nav_Bar .contenedor_de_nav{
-        display: none;
-    }
-    
-    .nav_Bar .logo img {
-        position: fixed;
-        right: 50%;
-        bottom: 50%;
-        transform: translate(55%,50%);
-        margin-left: 0;
-    }
-
-    /* Sección principal */
-    .primer_contenido img {
-        height: 25vh;
-    }
-
-    .novedades .contenido_tarjeta .tarjeta{
-    transform: translate(0, 20%);
-    background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .articulo_principal {
-        flex-direction: column;
-    }
-
-    .articulo_principal article {
-        width: 90%;
-    }
-
-    .articulo_principal article h2 {
-        text-align: center;
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
-    .bg_especificaciones{
-        width: 100%;
-        height: 220vh;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .caracteristica_principales {
-        width: 80%;
-        height: 200vh;
-        grid-template-columns: 100%;
-        gap: 1rem;
-        grid-template-areas: 
-        "imagen"
-        "contenedor";
-        overflow: hidden;
-        transform: translate(50%, 50%);
-    }
-
-    .caracteristica_principales .imagen_caracteristica_principales {
-        width: 100%;
-        height: 100%;
-        font-size: 24px;
-        text-align: center;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .caracteristica_principales .imagen_caracteristica_principales span {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        font-weight: bolder;
-    }
-
-    .caracteristica_principales .especificaciones {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 15px;
-        grid-area: contenedor;
-    }
-
-    .caracteristica_principales .especificaciones .caja_de_espec:hover {
-        scale: 1;
-        filter: none;
-    }
-
-    .titulo_modelos {
-        top: 10%;
-        height: 15vh;
-    }
-
-    .modelos {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin: 80px 0;
-        gap: 50px;
-    }
-
-    .quienes_somos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        height: 90vh;
-    }
-
-    .contenedor_de_nosotros {
-        width: 100%;
-        height: 100vh;
-        margin: 50px 0;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 30px;
-        overflow: scroll;
-        margin-bottom: 30vh;
-        margin-top: 25vh;
-        text-align: center;
-    }
-
-    .quienes_somos .imagen_presentacion {
-        width: 100%;
-        height: 40vh;
-        background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
-        background-repeat: no-repeat;
-        background-position: 0 15vh;
-        background-size: cover;
-    }
-}
+/*# sourceMappingURL=styles.css.map */
