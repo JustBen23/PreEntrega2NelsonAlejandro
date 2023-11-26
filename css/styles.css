@@ -100,7 +100,7 @@ header {
 .primer_contenido .imagen_principal_fondo {
   width: 100%;
   height: 70vh;
-  background: url("/img/black-red-abstract-polygon-3d-4k-45.jpg");
+  background: url("../img/black-red-abstract-polygon-3d-4k-45.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -147,13 +147,13 @@ header {
   flex-wrap: wrap;
 }
 .novedades .tarjeta_1 {
-  background: url("../../img/card_images/intel.jpg");
+  background: url("../img/card_images/intel.jpg");
 }
 .novedades .tarjeta_2 {
-  background: url("../../img/card_images/nvidia.jpg");
+  background: url("../img/card_images/nvidia.jpg");
 }
 .novedades .tarjeta_3 {
-  background: url("../../img/card_images/Acer_Nitro_5_lead.jpg");
+  background: url("../img/card_images/Acer_Nitro_5_lead.jpg");
 }
 .novedades .contenido_tarjeta {
   width: 300px;
