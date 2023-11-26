@@ -92,14 +92,48 @@ header {
 }
 
 /* Sección principal */
-.primer_contenido img {
-  margin-top: 50px;
+.primer_contenido {
   width: 100%;
   height: 70vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+.primer_contenido .imagen_principal_fondo {
+  width: 100%;
+  height: 70vh;
+  background: url(../../img/black-red-abstract-polygon-3d-4k-45.jpg);
   background-size: cover;
-} /* Fin del header*/
+  background-position: center;
+}
+.primer_contenido .imagen_principal_fondo .contenido_header {
+  width: 100%;
+  padding: 3% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  filter: drop-shadow(0 0 90px rgb(0, 0, 0));
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.primer_contenido .imagen_principal_fondo .contenido_header .titulo_principal {
+  width: 50%;
+  padding: 0;
+}
+.primer_contenido .imagen_principal_fondo .contenido_header .titulo_principal h1 {
+  font-weight: bolder;
+  font-size: 80px;
+}
+.primer_contenido .imagen_principal_fondo .contenido_header .titulo_principal h2 {
+  font-weight: light;
+  font-size: 36px;
+}
+.primer_contenido .imagen_principal_fondo .contenido_header .titulo_principal p {
+  font-size: 20px;
+}
+.primer_contenido .imagen_principal_fondo .contenido_header .imagen_laptop {
+  width: 50%;
+}
+
+/* Fin del header*/
 /* Productos nuevos */
 /* Tarjetas */
 .novedades {

@@ -114,14 +114,58 @@ header {
 }
 
 /* Sección principal */
-.primer_contenido img {
-    margin-top: 50px;
+
+.primer_contenido {
     width: 100%;
     height: 70vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} /* Fin del header*/
+    margin-top: 50px;
+
+    .imagen_principal_fondo {
+        width: 100%;
+        height: 70vh;
+        background: $fondo_header;
+        background-size: cover;
+        background-position: center;
+        
+        
+        .contenido_header{
+            width: 100%;
+            padding: 3% 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            filter: drop-shadow(0 0 90px rgb(0, 0, 0));
+            text-shadow: 0 0 20px rgb(0, 0, 0);
+
+            .titulo_principal {
+                width: 50%;
+                padding: 0;
+
+                h1 {
+                    font-weight: bolder;
+                    font-size: 80px;
+                }
+
+                h2 {
+                    font-weight: light;
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            .imagen_laptop {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+/* Fin del header*/
 
 /* Productos nuevos */
 

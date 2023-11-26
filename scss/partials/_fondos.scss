@@ -1,24 +1,14 @@
 $imagen_modelos:url(https://www.cnet.com/a/img/resize/8b4fabbc630942152fcff6e299f97e7197d70569/hub/2020/01/28/5284e5a2-1519-4d09-a07e-d50b317c954e/01-acer-nitro-5-an517-51-56yw.jpg?auto=webp&fit=crop&height=675&width=1200);
 $imagen_nosotros:url(https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg);
 $imagen_especificaciones:url(https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg);
+$fondo_nosotros:url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
 $fondo_especificaciones:url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
 $fondo_susbscribete:url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
-$fondo_nosotros:url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
-
-// $fondo_tarjeta: (
-
-//     url(../../img/card_images/intel.jpg),
-//     url(../../img/card_images/nvidia.jpg), 
-//     url(../../img/card_images/Acer_Nitro_5_lead.jpg)
-
-// );
+$fondo_header:url(../../img/black-red-abstract-polygon-3d-4k-45.jpg);
+$imagen_laptop:url(../../img/Acer_Nitro_5.png);
 
 $fondo_tarjeta: (
-
-    url(./intel.jpg),
-    url(./nvidia.jpg), 
-    url(./Acer_Nitro_5_lead.jpg)
-
+    url(../../img/card_images/intel.jpg),
+    url(../../img/card_images/nvidia.jpg), 
+    url(../../img/card_images/Acer_Nitro_5_lead.jpg)
 );
-
-
