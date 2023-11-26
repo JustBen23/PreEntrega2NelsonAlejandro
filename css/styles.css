@@ -95,7 +95,7 @@ header {
 .primer_contenido img {
   margin-top: 50px;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,18 +105,25 @@ header {
 .novedades {
   color: rgb(255, 255, 255);
   width: 100%;
-  /* height: 500px; */
-  margin: 50px 0;
+  margin: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
 }
+.novedades .tarjeta_1 {
+  background: url(../../img/card_images/intel.jpg);
+}
+.novedades .tarjeta_2 {
+  background: url(../../img/card_images/nvidia.jpg);
+}
+.novedades .tarjeta_3 {
+  background: url(../../img/card_images/Acer_Nitro_5_lead.jpg);
+}
 .novedades .contenido_tarjeta {
   width: 300px;
   height: 400px;
-  background: rgb(82, 0, 0);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -131,7 +138,7 @@ header {
 .novedades .contenido_tarjeta .tarjeta {
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(138, 21, 21);
   padding: 30px;
   padding-top: 20px;
   clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
@@ -279,7 +286,7 @@ header {
 
 /* Pagina "Especificaciones" */
 .bg_especificaciones {
-  background-image: url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
+  background: url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -303,7 +310,7 @@ header {
   overflow: hidden;
 }
 .caracteristica_principales .imagen_caracteristica_principales {
-  background: url("https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg");
+  background: url(https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg);
   box-shadow: inset 0px 0px 10px 0px rgb(0, 0, 0);
 }
 .caracteristica_principales .imagen_caracteristica_principales span {
@@ -341,7 +348,7 @@ header {
 
 /* Pagina "Subscribete" */
 .bg_subscribete {
-  background-image: url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
+  background: url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -398,31 +405,35 @@ header {
 
 /* Pagina nosotros */
 .quienes_somos {
+  background: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
   position: absolute;
+  margin-left: -12px;
+  margin-top: 50px;
+  width: 100vw;
+  height: 87vh;
+  background-size: cover;
+}
+.quienes_somos .contenedor_de_nosotros {
+  width: 100vw;
+  height: 90vh;
   display: flex;
+  backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100%;
-  height: 90vh;
-  margin: 0;
+  filter: drop-shadow(0 0 400px black);
+  padding-right: 5%;
+  gap: 100px;
 }
-.quienes_somos .imagen_presentacion {
+.quienes_somos .contenedor_de_nosotros .imagen_presentacion {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg);
   width: 100%;
-  height: 87vh;
-  background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
+  height: 88vh;
   background-repeat: no-repeat;
-  background-position: end;
+  margin-top: -28px;
   background-size: cover;
-}
-
-.contenedor_de_nosotros {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
+  box-shadow: 0 0 15px 10px black;
+  clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 90% 100%, 100% 0);
 }
 
 /* Footer de las paginas */
@@ -438,6 +449,7 @@ footer {
   justify-content: center;
   align-items: center;
   grid-area: footer;
+  bottom: 0;
 }
 
 /* Media Queries */
@@ -595,11 +607,11 @@ footer {
   }
   .formulario article h1 {
     font-size: 40px;
-    margin: 10px 0 20px 0;
+    margin: 0;
   }
   .formulario article p {
     width: 70%;
-    margin: 20px 0;
+    margin: 15px 0;
   }
   .formulario article form {
     display: flex;

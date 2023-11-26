@@ -1,0 +1,221 @@
+/* Media Queries */
+
+@media (max-width:768px) {
+    .nav_Bar label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu_check {
+        z-index: 10000;
+
+        &:checked~.contenedor_de_nav{
+            background-color: rgba(141, 26, 26, 0.5);
+            position: absolute;
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            left: 0;
+            top: 50px;
+            justify-content: start;
+        }
+    }
+    
+    .nav_Bar .contenedor_de_nav {
+        display: none;
+    }
+    
+    .nav_Bar .logo img {
+        position: fixed;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(55%,50%);
+        margin-left: 0;
+    }
+
+    /* Sección principal */
+    .primer_contenido img {
+        height: 25vh;
+    }
+
+    .novedades .contenido_tarjeta .tarjeta{
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .articulo_principal {
+        flex-direction: column;
+
+        article {
+            width: 90%;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .quienes_somos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 90vh;
+
+        .imagen_presentacion {
+            width: 100%;
+            height: 40vh;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
+            background-repeat: no-repeat;
+            background-position: 0 15vh;
+            background-size: cover;
+        }
+    }
+
+    .contenedor_de_nosotros {
+        width: 100%;
+        height: 100vh;
+        margin: 50px 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        overflow: scroll;
+        margin-bottom: 30vh;
+        margin-top: 25vh;
+        text-align: center;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 300px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
+    }
+}

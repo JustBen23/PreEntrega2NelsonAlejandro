@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import "./partials/fuentes";
+@import "./partials/fondos";
+@import "./partials/variables";
 
 /* Reset */
 * {    
@@ -115,32 +117,35 @@ header {
 .primer_contenido img {
     margin-top: 50px;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 } /* Fin del header*/
-
 
 /* Productos nuevos */
 
 /* Tarjetas */
 
 .novedades{
+    @each $fondo in $fondo_tarjeta {
+        $i:index($fondo_tarjeta, $fondo);
+        .tarjeta_#{$i}{
+            background:  $fondo;
+        }
+    }
     color: rgb(255, 255, 255);
     width: 100%;
-    /* height: 500px; */
-    margin: 50px 0;
+    margin: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
-
+    
     .contenido_tarjeta {
         width: 300px;
         height: 400px;
-        background: rgb(82, 0, 0);
         background-size: contain;
         background-repeat: no-repeat;
         display: flex;
@@ -151,11 +156,11 @@ header {
         min-height: 400px;
         clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
         filter: drop-shadow(0 0 5px 10px black);
-    
+
         .tarjeta{
             width: 100%; 
             height: 100%;
-            background-color: rgb(255, 0, 0);
+            background-color: rgb(138, 21, 21);
             padding: 30px;
             padding-top: 20px;
             clip-path: polygon(0 0, 0 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0);
@@ -172,7 +177,7 @@ header {
             p {
                 padding-top: 7%;
             }     
-            
+
             &:hover {
                 transform: translate(0, 20%);
                 transition-duration:.3s;
@@ -180,6 +185,8 @@ header {
             }
         }
     }
+
+    
 } /* Fin tarjetas */
 
 /* Segundo articulo */
@@ -308,7 +315,7 @@ header {
 }
 
 .imagen_principal_modelo {
-    background: url(https://www.cnet.com/a/img/resize/8b4fabbc630942152fcff6e299f97e7197d70569/hub/2020/01/28/5284e5a2-1519-4d09-a07e-d50b317c954e/01-acer-nitro-5-an517-51-56yw.jpg?auto=webp&fit=crop&height=675&width=1200);
+    background: $imagen_modelos;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -320,7 +327,7 @@ header {
 /* Pagina "Especificaciones" */
 
 .bg_especificaciones{
-    background-image: url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg);
+    background: $fondo_especificaciones;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -344,7 +351,7 @@ header {
     overflow: hidden;
 
     .imagen_caracteristica_principales{
-        background: url("https://i.pinimg.com/564x/01/7b/97/017b97779f7e8ede3b8da9c8ec9e28ac.jpg");
+        background: $imagen_especificaciones;
         box-shadow: inset 0px 0px 10px 0px rgb(0, 0, 0);
 
         span {
@@ -391,7 +398,7 @@ header {
 
 
 .bg_subscribete {
-    background-image: url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
+    background: $fondo_susbscribete;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -456,32 +463,39 @@ header {
 /* Pagina nosotros */
 
 .quienes_somos {
+    background: $fondo_nosotros;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    height: 90vh;
-    margin: 0;
-
-    .imagen_presentacion {
-        width: 100%;
-        height: 87vh;
-        background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
-        background-repeat: no-repeat;
-        background-position: end;
-        background-size: cover;
+    
+    margin-left: -12px;
+    margin-top: 50px;
+    width: 100vw;
+    height: 87vh;
+    background-size: cover;
+    
+    .contenedor_de_nosotros {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        filter: drop-shadow(0 0 400px black);
+        padding-right: 5%;
+        gap: 100px;
+        
+        .imagen_presentacion {
+            background: $imagen_nosotros;
+            width: 100%;
+            height: 88vh;
+            background-repeat: no-repeat;
+            margin-top: -28px;
+            background-size: cover;
+            box-shadow: 0 0 15px 10px black;
+            clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 90% 100%, 100% 0);
+        }
+        
     }
-}
-
-.contenedor_de_nosotros {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
 }
 
 /* Footer de las paginas */ 
@@ -498,228 +512,7 @@ footer {
     justify-content: center;
     align-items: center;
     grid-area: footer;
+    bottom: 0;
 }
 
-/* Media Queries */
-
-@media (max-width:768px) {
-    .nav_Bar label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu_check {
-        z-index: 10000;
-
-        &:checked~.contenedor_de_nav{
-            background-color: rgba(141, 26, 26, 0.5);
-            position: absolute;
-            width: 100%;
-            height: 30vh;
-            display: flex;
-            flex-direction: column;
-            left: 0;
-            top: 50px;
-            justify-content: start;
-        }
-    }
-
-
-    
-    .nav_Bar .contenedor_de_nav {
-        display: none;
-    }
-    
-    .nav_Bar .logo img {
-        position: fixed;
-        right: 50%;
-        bottom: 50%;
-        transform: translate(55%,50%);
-        margin-left: 0;
-    }
-
-    /* Sección principal */
-    .primer_contenido img {
-        height: 25vh;
-    }
-
-    .novedades .contenido_tarjeta .tarjeta{
-    transform: translate(0, 20%);
-    background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .articulo_principal {
-        flex-direction: column;
-
-        article {
-            width: 90%;
-
-            h2 {
-                text-align: center;
-            }
-        }
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
-    .bg_especificaciones{
-        width: 100%;
-        height: 220vh;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .caracteristica_principales {
-        width: 80%;
-        height: 200vh;
-        grid-template-columns: 100%;
-        gap: 1rem;
-        grid-template-areas: 
-        "imagen"
-        "contenedor";
-        overflow: hidden;
-        transform: translate(50%, 50%);
-
-        .imagen_caracteristica_principales {
-            width: 100%;
-            height: 100%;
-            font-size: 24px;
-            text-align: center;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-
-            span {
-                display: flex;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                align-content: center;
-                align-items: center;
-                justify-content: center;
-                font-weight: bolder;
-            }
-        }
-
-        .especificaciones {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 15px;
-            grid-area: contenedor;
-
-            .caja_de_espec:hover {
-                scale: 1;
-                filter: none;
-            }
-        }
-    }
-
-    .titulo_modelos {
-        top: 10%;
-        height: 15vh;
-    }
-
-    .modelos {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin: 80px 0;
-        gap: 50px;
-    }
-
-    .quienes_somos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        height: 90vh;
-
-        .imagen_presentacion {
-            width: 100%;
-            height: 40vh;
-            background: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Acer_Building_in_Oriental_Science_Park_right-front.jpg");
-            background-repeat: no-repeat;
-            background-position: 0 15vh;
-            background-size: cover;
-        }
-    }
-
-    .contenedor_de_nosotros {
-        width: 100%;
-        height: 100vh;
-        margin: 50px 0;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        gap: 30px;
-        overflow: scroll;
-        margin-bottom: 30vh;
-        margin-top: 25vh;
-        text-align: center;
-    }
-
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin: 10px 0 20px 0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 20px 0;
-            }
-    
-            form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
-                }
-    
-                .form_submit_buttom {
-                    width: 300px;
-                    height: 40px;
-                }
-            }
-        }
-    }
-
-    .fondo_formulario {
-        position: absolute;
-        bottom: 50%;
-        right: 50%;
-        transform: translate(50%,50%);
-        background-color: #750000bb;
-        width: 80%;
-        height: 80%;
-        clip-path: none;
-    }
-}
+@import "./partials/queries";
