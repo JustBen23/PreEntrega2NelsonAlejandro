@@ -5,11 +5,20 @@ $fondo_especificaciones:url(../img/acer-predator-abstract-uhdpaper.com-4K-33.jpg
 $fondo_susbscribete:url(../img/colorful-dark-abstract-polygon-3d-4k-39.jpg);
 $fondo_nosotros:url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
 
+// $fondo_tarjeta: (
+
+//     url(../../img/card_images/intel.jpg),
+//     url(../../img/card_images/nvidia.jpg), 
+//     url(../../img/card_images/Acer_Nitro_5_lead.jpg)
+
+// );
+
 $fondo_tarjeta: (
 
-    url(../../img/card_images/intel.jpg),
-    url(../../img/card_images/nvidia.jpg), 
-    url(../../img/card_images/Acer_Nitro_5_lead.jpg)
+    url(./intel.jpg),
+    url(./nvidia.jpg), 
+    url(./Acer_Nitro_5_lead.jpg)
 
 );
+
 
