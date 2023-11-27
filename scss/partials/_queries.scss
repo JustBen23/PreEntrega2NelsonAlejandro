@@ -36,9 +36,52 @@
     }
 
     /* Sección principal */
-    .primer_contenido img {
-        height: 25vh;
+
+    .primer_contenido {
+        margin-top: 10%;
+        padding: 0;
+        
+        .imagen_principal_fondo {
+            background-repeat: no-repeat;
+            height: 80vh;
+             
+            .contenido_header {
+                display: grid;
+                grid-template-areas: 
+                "imagen"
+                "texto"
+                ;
+                padding: 0 5%;
+
+                .imagen_laptop {
+                    width: 100%;
+                    height: auto;
+                    padding: 20px;
+                    grid-area: imagen;
+                }
+
+                .titulo_principal {
+                    width: 100%;
+                    height: auto;
+                    grid-area: texto;
+
+                    h1 {
+                        font-size: 45px;
+                    }
+
+                    h2 {
+                        font-size: 25px;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
+   
 
     .novedades .contenido_tarjeta .tarjeta{
     transform: translate(0, 20%);
@@ -217,5 +260,29 @@
         width: 80%;
         height: 80%;
         clip-path: none;
+    }
+}
+
+@media (min-width:500px) and (max-width:700px){
+
+    .primer_contenido {
+        height: 75vh;
+
+        .imagen_principal_fondo {
+            width: 100%;
+            height: 80vh;
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    .primer_contenido {
+        height: 65vh;
+
+        .imagen_principal_fondo {
+            width: 100%;
+            height: 65vh;
+        }
     }
 }
