@@ -82,12 +82,6 @@
             }
         }
     }
-   
-
-    .novedades .contenido_tarjeta .tarjeta{
-    transform: translate(0, 20%);
-    background-color: rgba(255, 0, 0, 0.699);
-    }
 
     .articulo_principal {
         flex-direction: column;
@@ -99,6 +93,30 @@
                 text-align: center;
             }
         }
+    }
+
+    .quienes_somos {
+        overflow: hidden;
+        
+        
+        .contenedor_de_nosotros {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            
+            
+            .imagen_presentacion {
+                width: 85%;
+                height: 30vh;
+                margin-top: 70px;
+                clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+            }
+        }
+    }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
     }
 
     .redes_sociales article a.subscribete:hover {
@@ -174,25 +192,6 @@
         justify-content: center;
         margin: 80px 0;
         gap: 50px;
-    }
-
-    .quienes_somos {
-        overflow: hidden;
-        
-        
-        .contenedor_de_nosotros {
-            display: flex;
-            flex-direction: column;
-            padding: 5%;
-            
-            
-            .imagen_presentacion {
-                width: 85%;
-                height: 30vh;
-                margin-top: 70px;
-                clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
-            }
-        }
     }
 
     .formulario {
@@ -361,6 +360,142 @@
             }
         }
     }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 300px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
+    }
 }
 
 @media (min-width:500px) and (max-width:610px){
@@ -472,6 +607,142 @@
             }
         }
     }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 300px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
+    }
 }
 
 @media (min-width:430px) and (max-width:499px) {
@@ -560,6 +831,20 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        article {
+            position: relative;
+            width: 400px;
+            
+            h2 {
+                margin-bottom: 20px;
+            }
+            
+            p {
+                margin: 7px;
+                
+            }
+        }
     }
 
     .quienes_somos {
@@ -582,6 +867,142 @@
                 clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
             }
         }
+    }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 300px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
     }
 }
 
@@ -619,12 +1040,6 @@
         bottom: 50%;
         transform: translate(55%,50%);
         margin-left: 0;
-    }
-
-    .articulo_principal {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
     }
 
     .primer_contenido {
@@ -673,6 +1088,26 @@
         }
     }
 
+    .articulo_principal {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        article {
+            position: relative;
+            width: 300px;
+            
+            h2 {
+                margin-bottom: 20px;
+            }
+            
+            p {
+                margin: 7px;
+                
+            }
+        }
+    }
+
     .quienes_somos {
         overflow: hidden;
         
@@ -693,6 +1128,142 @@
                 clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
             }
         }
+    }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
     }
 }
 
@@ -782,6 +1353,20 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        article {
+            position: relative;
+            width: 250px;
+            
+            h2 {
+                margin-bottom: 20px;
+            }
+            
+            p {
+                margin: 7px;
+                
+            }
+        }
     }
 
     .quienes_somos {
@@ -804,6 +1389,142 @@
                 clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
             }
         }
+    }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
     }
 }
 
@@ -893,7 +1614,20 @@
         flex-direction: column;
         text-align: center;
 
-        font-size: small;
+        article {
+            position: relative;
+            width: 200px;
+            font-size: small;
+            
+            h2 {
+                margin-bottom: 20px;
+            }
+            
+            p {
+                margin: 7px;
+                
+            }
+        }
     }
 
     .quienes_somos {
@@ -916,6 +1650,142 @@
                 clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
             }
         }
+    }
+
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    .bg_especificaciones{
+        width: 100%;
+        height: 220vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristica_principales {
+        width: 80%;
+        height: 200vh;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        grid-template-areas: 
+        "imagen"
+        "contenedor";
+        overflow: hidden;
+        transform: translate(50%, 50%);
+
+        .imagen_caracteristica_principales {
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                font-weight: bolder;
+            }
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+
+            .caja_de_espec:hover {
+                scale: 1;
+                filter: none;
+            }
+        }
+    }
+
+    .titulo_modelos {
+        top: 10%;
+        height: 15vh;
+    }
+
+    .modelos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+        gap: 50px;
+    }
+
+    .formulario {
+        left: 0%;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0;
+            width: 100%;
+            padding: 0px;
+    
+            h1{
+                font-size: 40px;
+                margin:  0;
+            }
+    
+            p{
+                width: 70%;
+                margin: 15px 0;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-top: 40px;
+    
+                .form_item {
+                    width: 70%;
+                    height: 40px;
+                    margin: 10px 0;
+                }
+    
+                .form_submit_buttom {
+                    width: 150px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .fondo_formulario {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: #750000bb;
+        width: 80%;
+        height: 80%;
+        clip-path: none;
     }
 }
 

@@ -552,10 +552,6 @@ footer {
   .primer_contenido .imagen_principal_fondo .contenido_header .titulo_principal p {
     font-size: 20px;
   }
-  .novedades .contenido_tarjeta .tarjeta {
-    transform: translate(0, 20%);
-    background-color: rgba(255, 0, 0, 0.699);
-  }
   .articulo_principal {
     flex-direction: column;
   }
@@ -564,6 +560,24 @@ footer {
   }
   .articulo_principal article h2 {
     text-align: center;
+  }
+  .quienes_somos {
+    overflow: hidden;
+  }
+  .quienes_somos .contenedor_de_nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+  .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
+    width: 85%;
+    height: 30vh;
+    margin-top: 70px;
+    clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+  }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
   }
   .redes_sociales article a.subscribete:hover {
     scale: 1;
@@ -628,20 +642,6 @@ footer {
     justify-content: center;
     margin: 80px 0;
     gap: 50px;
-  }
-  .quienes_somos {
-    overflow: hidden;
-  }
-  .quienes_somos .contenedor_de_nosotros {
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-  }
-  .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    width: 85%;
-    height: 30vh;
-    margin-top: 70px;
-    clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
   .formulario {
     left: 0%;
@@ -781,6 +781,122 @@ footer {
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    grid-area: contenedor;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 300px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
+  }
 }
 @media (min-width: 500px) and (max-width: 610px) {
   .nav_Bar label {
@@ -871,6 +987,122 @@ footer {
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    grid-area: contenedor;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 300px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
+  }
 }
 @media (min-width: 430px) and (max-width: 499px) {
   .nav_Bar label {
@@ -942,6 +1174,16 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  .articulo_principal article {
+    position: relative;
+    width: 400px;
+  }
+  .articulo_principal article h2 {
+    margin-bottom: 20px;
+  }
+  .articulo_principal article p {
+    margin: 7px;
+  }
   .quienes_somos {
     overflow: hidden;
   }
@@ -960,6 +1202,122 @@ footer {
     height: 30vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+  }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    grid-area: contenedor;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 300px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
   }
 }
 @media (min-width: 350px) and (max-width: 429px) {
@@ -991,11 +1349,6 @@ footer {
     bottom: 50%;
     transform: translate(55%, 50%);
     margin-left: 0;
-  }
-  .articulo_principal {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
   .primer_contenido {
     margin-top: 10%;
@@ -1031,6 +1384,21 @@ footer {
   .primer_contenido .imagen_principal_fondo .contenido_header .titulo_principal p {
     font-size: 20px;
   }
+  .articulo_principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .articulo_principal article {
+    position: relative;
+    width: 300px;
+  }
+  .articulo_principal article h2 {
+    margin-bottom: 20px;
+  }
+  .articulo_principal article p {
+    margin: 7px;
+  }
   .quienes_somos {
     overflow: hidden;
   }
@@ -1049,6 +1417,122 @@ footer {
     height: 20vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+  }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    grid-area: contenedor;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 200px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
   }
 }
 @media (min-width: 332px) and (max-width: 349px) {
@@ -1121,6 +1605,16 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  .articulo_principal article {
+    position: relative;
+    width: 250px;
+  }
+  .articulo_principal article h2 {
+    margin-bottom: 20px;
+  }
+  .articulo_principal article p {
+    margin: 7px;
+  }
   .quienes_somos {
     overflow: hidden;
   }
@@ -1139,6 +1633,122 @@ footer {
     height: 28vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+  }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    grid-area: contenedor;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 200px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
   }
 }
 @media (min-width: 280px) and (max-width: 331px) {
@@ -1209,7 +1819,17 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .articulo_principal article {
+    position: relative;
+    width: 200px;
     font-size: small;
+  }
+  .articulo_principal article h2 {
+    margin-bottom: 20px;
+  }
+  .articulo_principal article p {
+    margin: 7px;
   }
   .quienes_somos {
     overflow: hidden;
@@ -1229,6 +1849,122 @@ footer {
     height: 35vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+  }
+  .novedades .contenido_tarjeta .tarjeta {
+    transform: translate(0, 20%);
+    background-color: rgba(255, 0, 0, 0.699);
+  }
+  .redes_sociales article a.subscribete:hover {
+    scale: 1;
+    font-weight: normal;
+  }
+  .bg_especificaciones {
+    width: 100%;
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .caracteristica_principales {
+    width: 80%;
+    height: 200vh;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    grid-template-areas: "imagen" "contenedor";
+    overflow: hidden;
+    transform: translate(50%, 50%);
+  }
+  .caracteristica_principales .imagen_caracteristica_principales {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .caracteristica_principales .imagen_caracteristica_principales span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+  .caracteristica_principales .especificaciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    grid-area: contenedor;
+  }
+  .caracteristica_principales .especificaciones .caja_de_espec:hover {
+    scale: 1;
+    filter: none;
+  }
+  .titulo_modelos {
+    top: 10%;
+    height: 15vh;
+  }
+  .modelos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .formulario {
+    left: 0%;
+  }
+  .formulario article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .formulario article h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .formulario article p {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .formulario article form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .formulario article form .form_item {
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+  }
+  .formulario article form .form_submit_buttom {
+    width: 150px;
+    height: 40px;
+  }
+  .fondo_formulario {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background-color: rgba(117, 0, 0, 0.7333333333);
+    width: 80%;
+    height: 80%;
+    clip-path: none;
   }
 }
 
