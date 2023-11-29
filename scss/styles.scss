@@ -422,11 +422,11 @@ header {
 }
 
 
-/* Pagina "Subscribete" */
+/* Pagina "Suscribete" */
 
 
-.bg_subscribete {
-    background: $fondo_susbscribete;
+.bg_suscribete {
+    background: $fondo_suscribete;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -476,7 +476,7 @@ header {
 
 /* Exclusivo para el fondo de la pagina "Subscribete" */ 
 
-.main_subscribete{
+.main_suscribete{
     display: inline-block;
 }
 
@@ -534,6 +534,8 @@ footer {
     background-color: $negro_transparente;
     grid-area: footer;
 
+
+    //Footer especial del index
     .footer_nav{
         @extend footer;
         @include center_element(parcial);

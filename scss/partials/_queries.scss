@@ -2,6 +2,8 @@
 
 @media (min-width:701px) and (max-width:768px){
 
+    /* Barra de navegación */
+
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -36,7 +38,7 @@
         margin-left: 0;
     }
 
-    /* Sección principal */
+    /* Index */
 
     .primer_contenido {
         margin-top: 10%;
@@ -96,6 +98,17 @@
         }
     }
 
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -115,16 +128,7 @@
         }
     }
 
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -185,6 +189,7 @@
         height: 15vh;
     }
 
+    /* Modelos */
     .modelos {
         display: flex;
         flex-direction: column;
@@ -195,6 +200,7 @@
         gap: 50px;
     }
 
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -254,6 +260,7 @@
 
 @media (min-width:611px) and (max-width:700px){
 
+    /* Barra de navegación */
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -288,6 +295,7 @@
         margin-left: 0;
     }
 
+    /* Index */
     .primer_contenido {
         margin-top: 10%;
         padding: 0;
@@ -340,6 +348,17 @@
         text-align: center;
     }
 
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -362,16 +381,7 @@
         }
     }
 
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -427,6 +437,7 @@
         }
     }
 
+    /* Modelos */
     .titulo_modelos {
         top: 10%;
         height: 15vh;
@@ -442,6 +453,7 @@
         gap: 50px;
     }
 
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -501,6 +513,7 @@
 
 @media (min-width:500px) and (max-width:610px){
 
+    /* Barra de navegación */
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -535,6 +548,7 @@
         margin-left: 0;
     }
 
+    /* Index */
     .primer_contenido {
         margin-top: 10%;
         padding: 0;
@@ -587,6 +601,16 @@
         text-align: center;
     }
 
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }    
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -609,16 +633,7 @@
         }
     }
 
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -674,6 +689,7 @@
         }
     }
 
+    /* Modelos */
     .titulo_modelos {
         top: 10%;
         height: 15vh;
@@ -689,6 +705,7 @@
         gap: 50px;
     }
 
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -748,6 +765,7 @@
 
 @media (min-width:430px) and (max-width:499px) {
 
+    /* Barra de navegación */
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -781,7 +799,7 @@
         transform: translate(55%,50%);
         margin-left: 0;
     }
-
+    /* Index */
     .primer_contenido {
         margin-top: 10%;
         padding: 0;
@@ -848,6 +866,16 @@
         }
     }
 
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -869,17 +897,7 @@
             }
         }
     }
-
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -934,7 +952,7 @@
             }
         }
     }
-
+    /* Modelos */
     .titulo_modelos {
         top: 10%;
         height: 15vh;
@@ -949,7 +967,7 @@
         margin: 80px 0;
         gap: 50px;
     }
-
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -1020,6 +1038,7 @@
 
 @media (min-width:350px) and (max-width:429px) {
 
+    /* Barra de navegación */
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -1053,7 +1072,7 @@
         transform: translate(55%,50%);
         margin-left: 0;
     }
-
+    /* Index */
     .primer_contenido {
         margin-top: 10%;
         padding: 0;
@@ -1119,7 +1138,16 @@
             }
         }
     }
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
 
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -1141,17 +1169,7 @@
             }
         }
     }
-
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -1206,7 +1224,7 @@
             }
         }
     }
-
+    /* Modelos */
     .titulo_modelos {
         top: 10%;
         height: 15vh;
@@ -1221,7 +1239,7 @@
         margin: 80px 0;
         gap: 50px;
     }
-
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -1277,7 +1295,7 @@
         height: 80%;
         clip-path: none;
     }
-
+    /* Footer */
     .contenedor_de_footer_nav{
         position: relative;
         width: 50%;
@@ -1291,6 +1309,7 @@
 
 @media (min-width:332px) and (max-width:349px) {
 
+    /* Barra de navegación */
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -1324,7 +1343,7 @@
         transform: translate(55%,50%);
         margin-left: 0;
     }
-
+    /* Index */
     .primer_contenido {
         margin-top: 10%;
         padding: 0;
@@ -1391,6 +1410,16 @@
         }
     }
 
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -1412,17 +1441,7 @@
             }
         }
     }
-
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -1477,7 +1496,7 @@
             }
         }
     }
-
+    /* Modelos */
     .titulo_modelos {
         top: 10%;
         height: 15vh;
@@ -1492,7 +1511,7 @@
         margin: 80px 0;
         gap: 50px;
     }
-
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -1548,7 +1567,7 @@
         height: 80%;
         clip-path: none;
     }
-
+    /* Footer */
     .contenedor_de_footer_nav{
         position: relative;
         width: 50%;
@@ -1562,6 +1581,7 @@
 
 @media (min-width:280px) and (max-width:331px) {
 
+    /* Barra de navegación */
     .nav_Bar label{
         display: flex;
         justify-content: center;
@@ -1595,7 +1615,7 @@
         transform: translate(55%,50%);
         margin-left: 0;
     }
-
+    /* Index */
     .primer_contenido {
         margin-top: 10%;
         padding: 0;
@@ -1662,6 +1682,16 @@
         }
     }
 
+    .novedades .contenido_tarjeta .tarjeta{
+        transform: translate(0, 20%);
+        background-color: rgba(255, 0, 0, 0.699);
+    }
+
+    .redes_sociales article a.subscribete:hover {
+        scale: 1;
+        font-weight: normal;
+    }
+    /* Nosotros */
     .quienes_somos {
         overflow: hidden;
         
@@ -1683,17 +1713,7 @@
             }
         }
     }
-
-    .novedades .contenido_tarjeta .tarjeta{
-        transform: translate(0, 20%);
-        background-color: rgba(255, 0, 0, 0.699);
-    }
-
-    .redes_sociales article a.subscribete:hover {
-        scale: 1;
-        font-weight: normal;
-    }
-
+    /* Especificaciones */
     .bg_especificaciones{
         width: 100%;
         height: 220vh;
@@ -1748,7 +1768,7 @@
             }
         }
     }
-
+    /* Modelos */
     .titulo_modelos {
         top: 10%;
         height: 15vh;
@@ -1763,7 +1783,7 @@
         margin: 80px 0;
         gap: 50px;
     }
-
+    /* Suscribete */
     .formulario {
         left: 0%;
         
@@ -1819,7 +1839,7 @@
         height: 80%;
         clip-path: none;
     }
-
+    /* Footer */
     .contenedor_de_footer_nav{
         position: relative;
         width: 50%;
@@ -1830,4 +1850,3 @@
         width: 50%;
     }
 }
-
