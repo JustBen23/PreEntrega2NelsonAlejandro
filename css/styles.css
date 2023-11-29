@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-/* Espacio para pruebas */
-/* Fin de espacio para pruebas */
 /* ------- Index ------- */
 body {
   background-color: rgb(48, 0, 0);
@@ -148,6 +146,7 @@ header {
   margin: 80px 0;
   gap: 50px;
   flex-wrap: wrap;
+  filter: drop-shadow(0 0 10px black);
 }
 .novedades .tarjeta_1 {
   background: url("../img/card_images/intel.jpg");
@@ -164,7 +163,7 @@ header {
   align-items: center;
   width: 300px;
   height: 400px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   min-height: 400px;
@@ -193,7 +192,15 @@ header {
 .novedades .contenido_tarjeta .tarjeta:hover {
   transform: translate(0, 20%);
   transition-duration: 0.3s;
-  background-color: rgba(255, 0, 0, 0.699);
+}
+.novedades .contenido_tarjeta .tarjeta:hover:nth-child(1) {
+  background-color: rgba(182, 28, 28, 0.8);
+}
+.novedades .contenido_tarjeta .tarjeta:hover:nth-child(2) {
+  background-color: rgba(222, 39, 39, 0.8);
+}
+.novedades .contenido_tarjeta .tarjeta:hover:nth-child(3) {
+  background-color: rgba(229, 83, 83, 0.8);
 }
 
 /* Fin tarjetas */
@@ -723,7 +730,7 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     margin: 10px 0;
   }
   .formulario article form .form_submit_buttom {
-    width: 300px;
+    width: 200px;
     height: 40px;
   }
   .fondo_formulario {
@@ -929,7 +936,7 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     margin: 10px 0;
   }
   .formulario article form .form_submit_buttom {
-    width: 300px;
+    width: 200px;
     height: 40px;
   }
   .fondo_formulario {
@@ -1135,7 +1142,7 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     margin: 10px 0;
   }
   .formulario article form .form_submit_buttom {
-    width: 300px;
+    width: 200px;
     height: 40px;
   }
   .fondo_formulario {
@@ -1351,7 +1358,7 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     margin: 10px 0;
   }
   .formulario article form .form_submit_buttom {
-    width: 300px;
+    width: 200px;
     height: 40px;
   }
   .fondo_formulario {
@@ -2022,7 +2029,7 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     margin: 10px 0;
   }
   .formulario article form .form_submit_buttom {
-    width: 150px;
+    width: 200px;
     height: 40px;
   }
   .fondo_formulario {

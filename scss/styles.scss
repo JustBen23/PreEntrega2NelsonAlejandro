@@ -10,25 +10,23 @@
     box-sizing: border-box;
 }
 
-/* Espacio para pruebas */
-
-
-/* Fin de espacio para pruebas */
-
-
 /* ------- Index ------- */
 
-@mixin center_element_full {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    align-content: center; 
-}
 
-@mixin center_element_partial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//Mixin para la forma de centrado de elementos
+
+@mixin center_element($tipo_de_centrado:full) {
+
+    @if $tipo_de_centrado == full {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        align-content: center; 
+    } @else if $tipo_de_centrado == parcial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 body {
@@ -87,15 +85,15 @@ header {
 
     /* Posición de los links en la barra de navegación */
     .contenedor_de_nav{
-        @include center_element_full;
+        @include center_element(full);
         position: fixed;
         right: 0;
         height: 100%;
         list-style: none;
         
-    
+        
         li {
-            @include center_element_full;
+            @include center_element(full);
             margin: 0px 17px;
             height: 100%;
             list-style: none;
@@ -142,7 +140,7 @@ header {
         
         
         .contenido_header{
-            @include center_element_partial;
+            @include center_element(parcial);
             width: 100%;
             padding: 3% 5%;
             gap: 5%;
@@ -183,20 +181,21 @@ header {
     @each $fondo in $fondo_tarjeta {
         $i:index($fondo_tarjeta, $fondo);
         .tarjeta_#{$i}{
-            background:  $fondo;
+        background:  $fondo;
         }
     }
-    @include center_element_partial;
+    @include center_element(parcial);
     width: 100%;
     margin: 80px 0;
     gap: 50px;
     flex-wrap: wrap;
+    filter: drop-shadow(0 0 10px black);
     
     .contenido_tarjeta {
-        @include center_element_partial;
+        @include center_element(parcial);
         width: 300px;
         height: 400px;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         min-height: 400px;
@@ -214,7 +213,7 @@ header {
             filter: drop-shadow(0 0 10px 10px black);
 
             h2 {
-                @include center_element_partial;
+                @include center_element(parcial);
                 text-align: center;
             }
 
@@ -223,9 +222,14 @@ header {
             }     
 
             &:hover {
+                @for $i from 1 through 3{
+                    &:nth-child(#{$i}){
+                        background-color: lighten($base_tarjeta, $i * 10%);
+                    }
+                }
                 transform: translate(0, 20%);
                 transition-duration:.3s;
-                background-color: $hover_tarjeta;
+                
             }
         }
     }
@@ -235,7 +239,7 @@ header {
 
 /* Segundo articulo */
 .articulo_principal {
-    @include center_element_full;
+    @include center_element(full);
     width: 100%;
     padding: 80px 0;
     position: relative;
@@ -265,7 +269,7 @@ header {
 
 /* Redes sociales */
 .redes_sociales {
-    @include center_element_full;
+    @include center_element(full);
     width: 100%;
     position: relative;
     margin-bottom: 70px;
@@ -277,7 +281,7 @@ header {
     }
 
     article a.subscribete {
-        @include center_element_partial;
+        @include center_element(parcial);
         text-decoration: none;
         color: white;
         width: 100%;
@@ -305,7 +309,7 @@ header {
     }
 
     .numero_telefonico{
-        @include center_element_partial;
+        @include center_element(parcial);
         text-decoration: none;
         color: white;
         text-align: center;
@@ -317,7 +321,7 @@ header {
 /* Pagina "Modelos" */
 
 .titulo_modelos {
-    @include center_element_partial;
+    @include center_element(parcial);
     position: absolute;
     top: 15%;
     width: 100%;
@@ -331,7 +335,7 @@ header {
 }
 
 .modelos {
-    @include center_element_full;
+    @include center_element(full);
     flex-direction: row;
     width: 100%;
     margin: 80px 0;
@@ -462,7 +466,7 @@ header {
 
             .form_submit_buttom {
                 display: flow-root;
-                width: 200px;
+                width: $tamaño_boton_sumbit;
                 height:30px;
                 margin: 40px 0;
             }
@@ -497,7 +501,7 @@ header {
     position: absolute;
     
     .contenedor_de_nosotros {
-        @include center_element_partial;
+        @include center_element(parcial);
         height: 95vh;
         backdrop-filter: blur(15px);
         padding-right: 5%;
@@ -521,7 +525,7 @@ header {
 /* Footer de las paginas */ 
 
 footer {
-    @include center_element_partial;
+    @include center_element(parcial);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -532,7 +536,7 @@ footer {
 
     .footer_nav{
         @extend footer;
-        @include center_element_partial;
+        @include center_element(parcial);
         padding-top: 20px;
         width: 100%;
         height: 150px;
@@ -544,7 +548,7 @@ footer {
             height: 80%;
             color: white;
             li {
-                @include center_element_full;
+                @include center_element(full);
                 justify-content: start;
                 list-style: none;
                 
@@ -558,7 +562,7 @@ footer {
         }
 
         .Otras_referencias_footer {
-            @include center_element_full;
+            @include center_element(full);
             position: absolute;
             right: 0;
             height: 80%;
