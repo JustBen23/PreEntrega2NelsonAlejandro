@@ -27,7 +27,7 @@ body {
 
 main {
   /* Esto permite que el footer se mantenga siempre al fondo de la página */
-  padding-bottom: 2.5rem;
+  padding-bottom: 5.5rem;
   grid-area: main;
 }
 
@@ -228,12 +228,12 @@ header {
 
 /* Redes sociales */
 .redes_sociales {
-  width: 100%;
-  position: relative;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: 100%;
+  position: relative;
   margin-bottom: 70px;
   text-align: center;
 }
@@ -267,10 +267,7 @@ header {
 .redes_sociales article ul li a img {
   width: 30px;
 }
-.redes_sociales .contactos {
-  grid-area: contacto;
-}
-.redes_sociales .contactos .numero_telefonico {
+.redes_sociales .numero_telefonico {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,6 +443,7 @@ header {
   background-repeat: no-repeat;
   padding: 0;
   overflow: hidden;
+  position: absolute;
 }
 .quienes_somos .contenedor_de_nosotros {
   display: flex;
@@ -470,7 +468,7 @@ header {
 }
 
 /* Footer de las paginas */
-footer {
+footer, footer .footer_nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,10 +477,57 @@ footer {
   width: 100%;
   height: 70px;
   counter-reset: none;
-  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.795);
   grid-area: footer;
-  bottom: 0;
+}
+footer .footer_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 150px;
+  color: white;
+}
+footer .footer_nav .contenedor_de_footer_nav {
+  position: absolute;
+  left: 0;
+  height: 80%;
+  color: white;
+}
+footer .footer_nav .contenedor_de_footer_nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  list-style: none;
+  margin: 0 10px;
+}
+footer .footer_nav .contenedor_de_footer_nav li a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer_nav .Otras_referencias_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  right: 0;
+  height: 80%;
+  right: 0;
+}
+footer .footer_nav .Otras_referencias_footer ul {
+  z-index: 100;
+}
+footer .footer_nav .Otras_referencias_footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+  list-style: none;
+}
+footer .footer_nav .Otras_referencias_footer ul li a img {
+  width: 30px;
 }
 
 /* Media Queries */
@@ -1319,6 +1364,14 @@ footer {
     height: 80%;
     clip-path: none;
   }
+  .contenedor_de_footer_nav {
+    position: relative;
+    width: 50%;
+  }
+  .Otras_referencias_footer {
+    position: relative;
+    width: 50%;
+  }
 }
 @media (min-width: 350px) and (max-width: 429px) {
   .nav_Bar label {
@@ -1533,6 +1586,14 @@ footer {
     width: 80%;
     height: 80%;
     clip-path: none;
+  }
+  .contenedor_de_footer_nav {
+    position: relative;
+    width: 50%;
+  }
+  .Otras_referencias_footer {
+    position: relative;
+    width: 50%;
   }
 }
 @media (min-width: 332px) and (max-width: 349px) {
@@ -1750,6 +1811,14 @@ footer {
     height: 80%;
     clip-path: none;
   }
+  .contenedor_de_footer_nav {
+    position: relative;
+    width: 50%;
+  }
+  .Otras_referencias_footer {
+    position: relative;
+    width: 50%;
+  }
 }
 @media (min-width: 280px) and (max-width: 331px) {
   .nav_Bar label {
@@ -1965,6 +2034,14 @@ footer {
     width: 80%;
     height: 80%;
     clip-path: none;
+  }
+  .contenedor_de_footer_nav {
+    position: relative;
+    width: 50%;
+  }
+  .Otras_referencias_footer {
+    position: relative;
+    width: 50%;
   }
 }
 

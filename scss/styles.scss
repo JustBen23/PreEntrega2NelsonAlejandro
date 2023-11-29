@@ -51,7 +51,7 @@ body {
 
 main{
     /* Esto permite que el footer se mantenga siempre al fondo de la página */
-    padding-bottom: 2.5rem;
+    padding-bottom: 5.5rem;
     grid-area: main;
 }
 
@@ -264,12 +264,9 @@ header {
 
 /* Redes sociales */
 .redes_sociales {
+    @include center_element_full;
     width: 100%;
     position: relative;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     margin-bottom: 70px;
     text-align: center;
 
@@ -306,17 +303,14 @@ header {
         }
     }
 
-    .contactos{
-        grid-area: contacto;
-
-        .numero_telefonico{
-            @include center_element_partial;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            margin-bottom: 10px;
-        }
+    .numero_telefonico{
+        @include center_element_partial;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
     }
+    
 } /* ------- Fin del Index ------- */
 
 /* Pagina "Modelos" */
@@ -499,6 +493,7 @@ header {
     background-repeat: no-repeat;
     padding: 0;
     overflow: hidden;
+    position: absolute;
     
     .contenedor_de_nosotros {
         @include center_element_partial;
@@ -531,10 +526,57 @@ footer {
     width: 100%;
     height: 70px; 
     counter-reset: none;
-    color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.795);
     grid-area: footer;
-    bottom: 0;
+
+    .footer_nav{
+        @extend footer;
+        @include center_element_partial;
+        padding-top: 20px;
+        width: 100%;
+        height: 150px;
+        color: white;
+        
+        .contenedor_de_footer_nav{
+            position: absolute;
+            left: 0;
+            height: 80%;
+            color: white;
+            li {
+                @include center_element_full;
+                justify-content: start;
+                list-style: none;
+                
+                margin: 0 10px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            
+        }
+
+        .Otras_referencias_footer {
+            @include center_element_full;
+            position: absolute;
+            right: 0;
+            height: 80%;
+            right: 0;
+            ul {
+                z-index: 100;
+                li {
+                    display: inline-block;
+                    margin: 0 10px;
+                    list-style: none;
+                    a {
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @import "./partials/queries";
