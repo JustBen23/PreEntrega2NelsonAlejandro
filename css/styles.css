@@ -248,7 +248,7 @@ header {
   width: 200px;
   margin: 0;
 }
-.redes_sociales article a.subscribete {
+.redes_sociales article a.suscribete {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +262,7 @@ header {
   clip-path: polygon(0 0, 0 80%, 5% 100%, 100% 100%, 100% 25%, 95% 0);
   transition-duration: 0.3s;
 }
-.redes_sociales article a.subscribete:hover {
+.redes_sociales article a.suscribete:hover {
   scale: 1.1;
   font-weight: bolder;
   transition-duration: 0.3s;
@@ -428,7 +428,7 @@ header {
   margin: 40px 0;
 }
 
-/* Exclusivo para el fondo de la pagina "Subscribete" */
+/* Exclusivo para el fondo de la pagina "Suscribete" */
 .main_suscribete {
   display: inline-block;
 }
