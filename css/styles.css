@@ -748,6 +748,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     height: 80%;
     clip-path: none;
   }
+  /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
+  }
 }
 @media (min-width: 611px) and (max-width: 700px) {
   /* Barra de navegación */
@@ -960,6 +965,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     height: 80%;
     clip-path: none;
   }
+  /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
+  }
 }
 @media (min-width: 500px) and (max-width: 610px) {
   /* Barra de navegación */
@@ -1171,6 +1181,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     width: 80%;
     height: 80%;
     clip-path: none;
+  }
+  /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
   }
 }
 @media (min-width: 430px) and (max-width: 499px) {
@@ -1393,6 +1408,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     width: 80%;
     height: 80%;
     clip-path: none;
+  }
+  /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
   }
   .contenedor_de_footer_nav {
     position: relative;
@@ -1624,6 +1644,10 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     clip-path: none;
   }
   /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
+  }
   .contenedor_de_footer_nav {
     position: relative;
     width: 50%;
@@ -1855,6 +1879,10 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     clip-path: none;
   }
   /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
+  }
   .contenedor_de_footer_nav {
     position: relative;
     width: 50%;
@@ -2086,6 +2114,10 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     clip-path: none;
   }
   /* Footer */
+  footer p, footer .footer_nav p {
+    font-size: smaller;
+    text-align: center;
+  }
   .contenedor_de_footer_nav {
     position: relative;
     width: 50%;
