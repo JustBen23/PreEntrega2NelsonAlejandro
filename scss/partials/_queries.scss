@@ -896,14 +896,24 @@
     /* Nosotros */
     .quienes_somos {
         overflow: hidden;
+        min-height: 150vh;
+        
+        p {
+            font-size: 16px
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
         
         .contenedor_de_nosotros {
             display: flex;
             flex-direction: column;
-            height: 94vh;
+            height: 150vh;
+            min-height: 150vh;
             padding-left: 5%;
             padding-bottom: 5%;
             font-size: small;
+            gap: 0;
             text-align: center;
             
             .imagen_presentacion {

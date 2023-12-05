@@ -219,6 +219,7 @@ header {
 
             p {
                 padding-top: 7%;
+                font-size: 16px;
             }     
 
             &:hover {
@@ -259,10 +260,14 @@ header {
         
         h2 {
             margin: 20px 7px;
+            padding-bottom: 20px;
+            font-size: 25x;
+            font-weight: bold;
         }
         
         p {
             margin: 7px;
+            font-size: 20px;
         }
     }
 }
@@ -271,9 +276,11 @@ header {
 .redes_sociales {
     @include center_element(full);
     width: 100%;
+    height: 40vh;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     text-align: center;
+    
 
     article img {
         width: 200px;
@@ -288,6 +295,7 @@ header {
         height: 40px;
         background-color: red;
         margin-bottom: 10px;
+        margin-top: 20px;
         text-align: center;
         clip-path: polygon(0 0, 0 80%, 5% 100%, 100% 100%, 100% 25%, 95% 0);
         transition-duration: .3s;
@@ -307,14 +315,24 @@ header {
             width: 30px;
         }
     }
-
-    .numero_telefonico{
+    
+    .correo_electronico {
         @include center_element(parcial);
         text-decoration: none;
         color: white;
         text-align: center;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
+
+    .numero_telefonico{
+        @include center_element(partial);
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     
 } /* ------- Fin del Index ------- */
 
@@ -338,7 +356,8 @@ header {
     @include center_element(full);
     flex-direction: row;
     width: 100%;
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 50px;
     gap: 50px;
 }
 
@@ -401,6 +420,8 @@ header {
         text-align: center;
         padding: 15px;
         grid-area: contenedor;
+        font-size: larger;
+        gap: 0 1.5rem;
 
         .caja_de_espec {
             transition-duration: .2s;
@@ -445,29 +466,32 @@ header {
 
         h1{
             font-size: 40px;
-            margin: 20px 0;
+            margin-bottom: 30px;
+            font-size: 50px;
         }
 
         p{
             width: 45%;
             margin: 10px 0;
+            font-size: 20px;
         }
 
         form {
             margin-top: 40px;
             width:100%;
+            font-size: 20px;
 
             .form_item {
                 display: flow-root;
-                width: 500px;
-                height:30px;
+                width: 600px;
+                height: 40;
                 margin: 10px 0;
             }
 
             .form_submit_buttom {
                 display: flow-root;
                 width: $tamaño_boton_sumbit;
-                height:30px;
+                height: 40px;
                 margin: 40px 0;
             }
         }
@@ -499,6 +523,12 @@ header {
     padding: 0;
     overflow: hidden;
     position: absolute;
+    p {
+        font-size: 20px
+    }
+    h1 {
+        margin-bottom: 30px;
+    }
     
     .contenedor_de_nosotros {
         @include center_element(parcial);
