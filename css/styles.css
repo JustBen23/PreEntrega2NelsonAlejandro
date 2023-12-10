@@ -278,6 +278,9 @@ header {
 .redes_sociales article ul li a img {
   width: 30px;
 }
+.redes_sociales h2 {
+  font-size: 35px;
+}
 .redes_sociales .correo_electronico {
   display: flex;
   justify-content: center;
@@ -287,12 +290,18 @@ header {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .redes_sociales .numero_telefonico {
   text-decoration: none;
   color: white;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 20px;
+}
+
+i {
+  margin: 0 10px;
 }
 
 /* ------- Fin del Index ------- */
@@ -397,13 +406,6 @@ header {
   filter: drop-shadow(0 1px 15px rgb(43, 43, 43));
 }
 
-.filtro_de_imagen {
-  width: 200px;
-  filter: brightness(500%);
-  filter: contrast(200%);
-  filter: drop-shadow(0 1px 2px black);
-}
-
 /* Pagina "Suscribete" */
 .bg_suscribete {
   background: url("../img/fondos/colorful-dark-abstract-polygon-3d-4k-39.jpg");
@@ -436,10 +438,26 @@ header {
   margin-top: 40px;
   font-size: 20px;
 }
+.bg_suscribete .formulario article form input:not(.form_submit_buttom) {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid red;
+  outline: none;
+}
+.bg_suscribete .formulario article form input:focus:not(.form_submit_buttom) ~ label, .bg_suscribete .formulario article form input:valid:not(.form_submit_buttom) ~ label {
+  top: -5px;
+}
+.bg_suscribete .formulario article form select {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid red;
+  outline: none;
+  color: white;
+}
 .bg_suscribete .formulario article form .form_item {
   display: flow-root;
-  width: 600px;
-  height: 40;
+  width: 40%;
+  height: 40px;
   margin: 10px 0;
 }
 .bg_suscribete .formulario article form .form_submit_buttom {
@@ -447,6 +465,18 @@ header {
   width: 200px;
   height: 40px;
   margin: 40px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  text-align: center;
+  clip-path: polygon(0 0, 0 80%, 5% 100%, 100% 100%, 100% 25%, 95% 0);
+  transition-duration: 0.3s;
+}
+.bg_suscribete .formulario article form .form_submit_buttom:hover {
+  scale: 1.1;
 }
 
 /* Exclusivo para el fondo de la pagina "Suscribete" */
@@ -500,7 +530,7 @@ header {
   height: 150px;
 }
 
-footer, footer .footer_nav {
+footer, footer .footer_nav_especs, footer .footer_nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -558,6 +588,60 @@ footer .footer_nav .Otras_referencias_footer ul li {
   margin: 10px;
 }
 footer .footer_nav .Otras_referencias_footer ul li a img {
+  width: 30px;
+}
+footer .footer_nav_especs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.795);
+  padding-top: 20px;
+  width: 100%;
+  height: 150px;
+  color: white;
+}
+footer .footer_nav_especs .contenedor_de_footer_nav_especs {
+  position: absolute;
+  left: 0;
+  height: 80%;
+  color: white;
+  margin-bottom: 22px;
+}
+footer .footer_nav_especs .contenedor_de_footer_nav_especs li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  list-style: none;
+  margin: 5px 42px;
+}
+footer .footer_nav_especs .contenedor_de_footer_nav_especs li a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer_nav_especs .Otras_referencias_footer_especs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  right: 0;
+  height: 80%;
+  right: 0;
+  margin-bottom: 21px;
+}
+footer .footer_nav_especs .Otras_referencias_footer_especs ul {
+  z-index: 100;
+}
+footer .footer_nav_especs .Otras_referencias_footer_especs ul li {
+  display: inline-block;
+  margin: 0 10px;
+  list-style: none;
+  margin: 10px;
+}
+footer .footer_nav_especs .Otras_referencias_footer_especs ul li a img {
   width: 30px;
 }
 
@@ -726,28 +810,30 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 70%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
     padding: 0px;
   }
-  .formulario article h1 {
+  .bg_suscribete .formulario article h1 {
     font-size: 40px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
+  .bg_suscribete .formulario article p {
+    width: 100%;
     margin: 15px 0;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -755,12 +841,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
     margin: 10px 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -771,11 +857,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 75%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }
@@ -939,28 +1025,30 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 70%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
     padding: 0px;
   }
-  .formulario article h1 {
+  .bg_suscribete .formulario article h1 {
     font-size: 40px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
+  .bg_suscribete .formulario article p {
+    width: 100%;
     margin: 15px 0;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -968,12 +1056,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
     margin: 10px 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -984,11 +1072,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 75%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }
@@ -1154,28 +1242,30 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 70%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
     padding: 0px;
   }
-  .formulario article h1 {
+  .bg_suscribete .formulario article h1 {
     font-size: 40px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
+  .bg_suscribete .formulario article p {
+    width: 100%;
     margin: 15px 0;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1183,12 +1273,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
     margin: 10px 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -1199,11 +1289,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 75%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }
@@ -1379,28 +1469,30 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 70%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
     padding: 0px;
   }
-  .formulario article h1 {
+  .bg_suscribete .formulario article h1 {
     font-size: 40px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
+  .bg_suscribete .formulario article p {
+    width: 100%;
     margin: 15px 0;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1408,12 +1500,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
     margin: 10px 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -1424,11 +1516,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 75%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }
@@ -1611,28 +1703,29 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 60%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
-    padding: 0px;
   }
-  .formulario article h1 {
-    font-size: 40px;
+  .bg_suscribete .formulario article h1 {
+    font-size: 35px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
-    margin: 15px 0;
+  .bg_suscribete .formulario article p {
+    width: 100%;
+    margin: 15px 0 0 0;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1640,12 +1733,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -1656,11 +1749,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 70%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }
@@ -1844,28 +1937,29 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 60%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
-    padding: 0px;
   }
-  .formulario article h1 {
-    font-size: 40px;
+  .bg_suscribete .formulario article h1 {
+    font-size: 35px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
-    margin: 15px 0;
+  .bg_suscribete .formulario article p {
+    width: 100%;
+    margin: 15px 0 0 0;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1873,12 +1967,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -1889,11 +1983,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 70%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }
@@ -2077,28 +2171,30 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     gap: 50px;
   }
   /* Suscribete */
-  .formulario {
-    left: 0%;
+  .bg_suscribete .formulario {
+    position: absolute;
+    margin-left: 10%;
+    width: 70%;
+    height: 60%;
+    padding: 5px;
   }
-  .formulario article {
+  .bg_suscribete .formulario article {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0;
     width: 100%;
-    padding: 0px;
   }
-  .formulario article h1 {
-    font-size: 40px;
+  .bg_suscribete .formulario article h1 {
+    font-size: 30px;
     margin: 0;
   }
-  .formulario article p {
-    width: 70%;
-    margin: 15px 0;
+  .bg_suscribete .formulario article p {
+    width: 100%;
+    margin: 15px 0 0 0;
+    font-size: 18px;
   }
-  .formulario article form {
+  .bg_suscribete .formulario article form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2106,12 +2202,12 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     justify-content: center;
     margin-top: 40px;
   }
-  .formulario article form .form_item {
-    width: 70%;
+  .bg_suscribete .formulario article form .form_item {
+    width: 80%;
     height: 40px;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
   }
-  .formulario article form .form_submit_buttom {
+  .bg_suscribete .formulario article form .form_submit_buttom {
     width: 200px;
     height: 40px;
   }
@@ -2122,11 +2218,11 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
     transform: translate(50%, 50%);
     background-color: rgba(117, 0, 0, 0.7333333333);
     width: 80%;
-    height: 80%;
+    height: 70%;
     clip-path: none;
   }
   /* Footer */
-  footer p, footer .footer_nav p {
+  footer p, footer .footer_nav p, footer .footer_nav_especs p {
     font-size: smaller;
     text-align: center;
   }

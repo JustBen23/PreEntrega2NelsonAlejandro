@@ -205,46 +205,51 @@
     }
 
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 70%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+                padding: 0px;
+        
+                h1{
+                    font-size: 40px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -257,7 +262,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 75%;
         clip-path: none;
     }
 
@@ -463,46 +468,51 @@
     }
 
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 70%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+                padding: 0px;
+        
+                h1{
+                    font-size: 40px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+        
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+        
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -515,7 +525,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 75%;
         clip-path: none;
     }
 
@@ -722,46 +732,51 @@
     }
 
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 70%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+                padding: 0px;
+        
+                h1{
+                    font-size: 40px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+        
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+        
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -774,7 +789,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 75%;
         clip-path: none;
     }
 
@@ -991,46 +1006,51 @@
         gap: 50px;
     }
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 70%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+                padding: 0px;
+        
+                h1{
+                    font-size: 40px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+        
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0;
+                    }
+        
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -1043,7 +1063,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 75%;
         clip-path: none;
     }
 
@@ -1269,46 +1289,50 @@
         gap: 50px;
     }
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 60%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+        
+                h1{
+                    font-size: 35px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0 0 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+        
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0 0 0;
+                    }
+        
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -1321,7 +1345,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 70%;
         clip-path: none;
     }
     /* Footer */
@@ -1546,46 +1570,50 @@
         gap: 50px;
     }
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 60%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+        
+                h1{
+                    font-size: 35px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0 0 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+        
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0 0 0;
+                    }
+        
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -1598,7 +1626,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 70%;
         clip-path: none;
     }
     /* Footer */
@@ -1823,46 +1851,51 @@
         gap: 50px;
     }
     /* Suscribete */
-    .formulario {
-        left: 0%;
-        
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-top: 0;
-            width: 100%;
-            padding: 0px;
-    
-            h1{
-                font-size: 40px;
-                margin:  0;
-            }
-    
-            p{
-                width: 70%;
-                margin: 15px 0;
-            }
-    
-            form {
+    .bg_suscribete {
+
+        .formulario {
+            position: absolute;
+            margin-left: 10%;
+            width: 70%;
+            height: 60%;
+            padding: 5px;
+
+            article {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 text-align: center;
                 justify-content: center;
-                margin-top: 40px;
-    
-                .form_item {
-                    width: 70%;
-                    height: 40px;
-                    margin: 10px 0;
+                width: 100%;
+        
+                h1{
+                    font-size: 30px;
+                    margin:  0;
                 }
-    
-                .form_submit_buttom {
-                    width: $tamaño_boton_sumbit;
-                    height: 40px;
+        
+                p{
+                    width: 100%;
+                    margin: 15px 0 0 0;
+                    font-size: 18px;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 40px;
+        
+                    .form_item {
+                        width: 80%;
+                        height: 40px;
+                        margin: 10px 0 0 0;
+                    }
+        
+                    .form_submit_buttom {
+                        width: $tamaño_boton_sumbit;
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -1875,7 +1908,7 @@
         transform: translate(50%,50%);
         background-color: #750000bb;
         width: 80%;
-        height: 80%;
+        height: 70%;
         clip-path: none;
     }
     /* Footer */
