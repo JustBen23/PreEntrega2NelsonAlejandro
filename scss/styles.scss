@@ -333,8 +333,6 @@ header {
         margin-bottom: 20px;
         font-size: 20px;
     }
-
-    
 } 
 
 i {
@@ -505,6 +503,10 @@ i {
                     border-bottom: 3px solid red;
                     outline: none;
                     color: white;
+
+                    option {
+                        background-color: $rojo_fondo;
+                    }
                 }
 
                 .form_item {

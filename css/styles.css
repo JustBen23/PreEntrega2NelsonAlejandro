@@ -454,6 +454,9 @@ i {
   outline: none;
   color: white;
 }
+.bg_suscribete .formulario article form select option {
+  background-color: rgb(48, 0, 0);
+}
 .bg_suscribete .formulario article form .form_item {
   display: flow-root;
   width: 40%;
