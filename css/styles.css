@@ -465,7 +465,6 @@ header {
   height: 93vh;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0;
   overflow: hidden;
 }
 .quienes_somos p {
@@ -556,6 +555,7 @@ footer .footer_nav .Otras_referencias_footer ul li {
   display: inline-block;
   margin: 0 10px;
   list-style: none;
+  margin: 10px;
 }
 footer .footer_nav .Otras_referencias_footer ul li a img {
   width: 30px;
@@ -648,12 +648,14 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
+    position: relative;
+    text-align: center;
   }
   .quienes_somos .contenedor_de_nosotros {
+    position: relative;
     display: flex;
+    padding: 5.5%;
     flex-direction: column;
-    padding: 5%;
   }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
     width: 85%;
@@ -860,21 +862,18 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
-  }
-  .quienes_somos .contenedor_de_nosotros {
-    display: flex;
-    flex-direction: column;
-    height: 94vh;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    font-size: small;
+    position: relative;
     text-align: center;
   }
+  .quienes_somos .contenedor_de_nosotros {
+    position: relative;
+    display: flex;
+    padding: 5.5%;
+    flex-direction: column;
+  }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    position: absolute;
     width: 85%;
-    height: 40vh;
+    height: 30vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
@@ -1076,21 +1075,20 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 100vh;
   }
   .quienes_somos .contenedor_de_nosotros {
+    position: relative;
     display: flex;
+    padding: 5.5%;
+    height: 100vh;
     flex-direction: column;
-    height: 94vh;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    font-size: small;
-    text-align: center;
   }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    position: absolute;
     width: 85%;
-    height: 35vh;
+    height: 25vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
@@ -1302,30 +1300,20 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
-    min-height: 150vh;
-  }
-  .quienes_somos p {
-    font-size: 16px;
-  }
-  .quienes_somos h1 {
-    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    height: 110vh;
   }
   .quienes_somos .contenedor_de_nosotros {
+    position: relative;
     display: flex;
+    padding: 5.5%;
+    height: 110vh;
     flex-direction: column;
-    height: 150vh;
-    min-height: 150vh;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    font-size: small;
-    gap: 0;
-    text-align: center;
   }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    position: absolute;
     width: 85%;
-    height: 30vh;
+    height: 20vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
@@ -1544,21 +1532,20 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 120vh;
   }
   .quienes_somos .contenedor_de_nosotros {
+    position: relative;
     display: flex;
+    padding: 5.5%;
+    height: 120vh;
     flex-direction: column;
-    height: 94vh;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    font-size: small;
-    text-align: center;
   }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    position: absolute;
     width: 85%;
-    height: 20vh;
+    height: 23vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
@@ -1778,21 +1765,20 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 120vh;
   }
   .quienes_somos .contenedor_de_nosotros {
+    position: relative;
     display: flex;
+    padding: 5.5%;
+    height: 120vh;
     flex-direction: column;
-    height: 94vh;
-    padding-left: 5%;
-    padding-bottom: 3%;
-    font-size: 12px;
-    text-align: center;
   }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    position: absolute;
     width: 85%;
-    height: 28vh;
+    height: 20vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
@@ -2012,21 +1998,20 @@ footer .footer_nav .Otras_referencias_footer ul li a img {
   }
   /* Nosotros */
   .quienes_somos {
-    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 130vh;
   }
   .quienes_somos .contenedor_de_nosotros {
+    position: relative;
     display: flex;
+    padding: 5.5%;
+    height: 130vh;
     flex-direction: column;
-    height: 94vh;
-    padding-left: 5%;
-    padding-bottom: 3%;
-    font-size: 10px;
-    text-align: center;
   }
   .quienes_somos .contenedor_de_nosotros .imagen_presentacion {
-    position: absolute;
     width: 85%;
-    height: 35vh;
+    height: 20vh;
     margin-top: 70px;
     clip-path: polygon(0 0, 0 100%, 0% 100%, 100% 100%, 100% 100%, 100% 0);
   }
