@@ -10,9 +10,6 @@
     box-sizing: border-box;
 }
 
-/* ------- Index ------- */
-
-
 //Mixin para la forma de centrado de elementos
 
 @mixin center_element($tipo_de_centrado:full) {
@@ -29,14 +26,12 @@
     }
 }
 
+/* ------- Index ------- */
+
 body {
     background-color: $rojo_fondo;
     font-family: 'Raleway', sans-serif;
     color: white;
-
-    /* Esto permite que el footer se mantenga siempre al fondo de la página */
-    position: relative;
-    min-height: 100vh;
 }
 
 .index_orden{    
@@ -50,7 +45,8 @@ body {
 
 main{
     /* Esto permite que el footer se mantenga siempre al fondo de la página */
-    padding-bottom: 5.5rem;
+    min-height: 100vh;
+    margin-bottom: -150px;
     grid-area: main;
 }
 
@@ -278,7 +274,6 @@ header {
     width: 100%;
     height: 40vh;
     position: relative;
-    margin-bottom: 90px;
     text-align: center;
     
 
@@ -338,38 +333,45 @@ header {
 
 /* Pagina "Modelos" */
 
-.titulo_modelos {
-    @include center_element(parcial);
-    position: absolute;
-    top: 15%;
+.main_modelos {
     width: 100%;
-    height: 15vh;
-    font-size: 64px;
-    background-color: $fondo_titulo_modelos;
+    height: 100%;
 
-    span {
-        text-align: center;
+    .titulo_modelos {
+        @include center_element(parcial);
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        height: 15vh;
+        font-size: 64px;
+        background-color: $fondo_titulo_modelos;
+    
+        span {
+            text-align: center;
+        }
+    }
+    
+    .modelos {
+        @include center_element(full);
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        gap: 50px;
+    }
+    
+    .imagen_principal_modelo {
+        background: $imagen_modelos;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+        margin-top: 50px;
     }
 }
 
-.modelos {
-    @include center_element(full);
-    flex-direction: row;
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    gap: 50px;
-}
-
-.imagen_principal_modelo {
-    background: $imagen_modelos;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 50vh;
-    margin-top: 50px;
-}
 
 /* Pagina "Especificaciones" */
 
@@ -377,59 +379,60 @@ header {
     background: $fondo_especificaciones;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 80px 0 30px 0;
 }
 
-.caracteristica_principales {
-    display: grid;
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%,50%);
-    padding: 20px;
-    width: 50%;
-    height: 80vh;
-    background-color: rgb(22, 22, 22);
-    background: $gradiente_negro;
-    background: $gradiente_negro_ie;
-    background: $gradiente_negro_firefox;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    grid-template-areas: "imagen contenedor contenedor";
-    overflow: hidden;
+.cuadro_especificaciones{
+    @include center_element(full);
 
-    .imagen_caracteristica_principales{
-        background: $imagen_especificaciones;
-        box-shadow: inset 0px 0px 10px 0px black;
-
-        span {
-            display: none;
-        }
-    }
-
-    img {
-        width: 95%;
-        height: 95%;
-        grid-area: imagen;
-    }
-
-    .especificaciones {
+    .caracteristica_principales {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 15px;
-        grid-area: contenedor;
-        font-size: larger;
-        gap: 0 1.5rem;
+        position: relative;
+        padding: 20px;
+        width: 50%;
+        height: 80vh;
+        background-color: rgb(22, 22, 22);
+        background: $gradiente_negro;
+        background: $gradiente_negro_ie;
+        background: $gradiente_negro_firefox;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        grid-template-areas: "imagen contenedor contenedor";
 
-        .caja_de_espec {
-            transition-duration: .2s;
+        .imagen_caracteristica_principales{
+            background: $imagen_especificaciones;
+            box-shadow: inset 0px 0px 10px 0px black;
 
-            &:hover {
-                scale: 1.2;
+            span {
+                display: none;
+            }
+        }
+
+        img {
+            width: 95%;
+            height: 95%;
+            grid-area: imagen;
+        }
+
+        .especificaciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            grid-area: contenedor;
+            font-size: larger;
+            gap: 0 1.5rem;
+
+            .caja_de_espec {
                 transition-duration: .2s;
-                filter: drop-shadow(0 1px 15px $sombra_roja);
+
+                &:hover {
+                    scale: 1.2;
+                    transition-duration: .2s;
+                    filter: drop-shadow(0 1px 15px $sombra_roja);
+                }
             }
         }
     }
@@ -450,59 +453,55 @@ header {
     background: $fondo_suscribete;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-}
+    margin-top: 50px;
 
-.formulario {
-    position: absolute;
-    width: 100%;
-    top: 15%;
-    left: 5%;
-
-    article {
+    .formulario {
         position: absolute;
-        margin-top: 50px;
-        width: 100%;
+        width: 95%;
+        top: 10%;
+        left: 5%;
 
-        h1{
-            font-size: 40px;
-            margin-bottom: 30px;
-            font-size: 50px;
-        }
+        article {
+            position: absolute;
+            margin-top: 50px;
+            width: 100%;
 
-        p{
-            width: 45%;
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        form {
-            margin-top: 40px;
-            width:100%;
-            font-size: 20px;
-
-            .form_item {
-                display: flow-root;
-                width: 600px;
-                height: 40;
-                margin: 10px 0;
+            h1{
+                font-size: 40px;
+                margin-bottom: 30px;
+                font-size: 50px;
             }
 
-            .form_submit_buttom {
-                display: flow-root;
-                width: $tamaño_boton_sumbit;
-                height: 40px;
-                margin: 40px 0;
+            p{
+                width: 45%;
+                margin: 10px 0;
+                font-size: 20px;
+            }
+
+            form {
+                margin-top: 40px;
+                // width:100%;
+                font-size: 20px;
+
+                .form_item {
+                    display: flow-root;
+                    width: 600px;
+                    height: 40;
+                    margin: 10px 0;
+                }
+
+                .form_submit_buttom {
+                    display: flow-root;
+                    width: $tamaño_boton_sumbit;
+                    height: 40px;
+                    margin: 40px 0;
+                }
             }
         }
     }
 }
 
 /* Exclusivo para el fondo de la pagina "Suscribete" */ 
-
-.main_suscribete{
-    display: inline-block;
-}
 
 .fondo_formulario {
     position: absolute;
@@ -522,7 +521,6 @@ header {
     background-repeat: no-repeat;
     padding: 0;
     overflow: hidden;
-    position: absolute;
     p {
         font-size: 20px
     }
@@ -554,14 +552,15 @@ header {
 
 /* Footer de las paginas */ 
 
+.control_del_footer{
+    height: 150px;
+}
+
 footer {
     @include center_element(parcial);
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    height: 70px; 
-    counter-reset: none;
-    background-color: $negro_transparente;
+    height: 150px;
     grid-area: footer;
 
 
@@ -569,6 +568,7 @@ footer {
     .footer_nav{
         @extend footer;
         @include center_element(parcial);
+        background-color: $negro_transparente;
         padding-top: 20px;
         width: 100%;
         height: 150px;
@@ -579,6 +579,7 @@ footer {
             left: 0;
             height: 80%;
             color: white;
+
             li {
                 @include center_element(full);
                 justify-content: start;
