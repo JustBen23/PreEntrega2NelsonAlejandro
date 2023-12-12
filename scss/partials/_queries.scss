@@ -1362,6 +1362,19 @@
         position: relative;
         width: 50%;
     }
+
+    .cuadro_error {
+        text-align: center;
+    
+        h1 {
+            font-size: 50px;
+        }
+    
+        h2 {
+            font-size: 36px;
+        }
+        
+    }
 }
 
 @media (min-width:332px) and (max-width:349px) {
@@ -1642,6 +1655,19 @@
     .Otras_referencias_footer {
         position: relative;
         width: 50%;
+    }
+
+    .cuadro_error {
+        text-align: center;
+    
+        h1 {
+            font-size: 50px;
+        }
+    
+        h2 {
+            font-size: 36px;
+        }
+        
     }
 }
 
@@ -1926,5 +1952,18 @@
     .Otras_referencias_footer {
         position: relative;
         width: 50%;
+    }
+    
+    .cuadro_error {
+        text-align: center;
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        h2 {
+            font-size: 28px;
+        }
+        
     }
 }

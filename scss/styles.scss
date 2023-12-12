@@ -602,7 +602,6 @@ footer {
     grid-area: footer;
 
 
-    //Footer especial del index
     .footer_nav{
         @extend footer;
         @include center_element(parcial);
@@ -707,6 +706,25 @@ footer {
             }
         }
     }
+}
+
+.cuadro_error {
+    @include center_element(full);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    gap: 50px;
+    padding: 25px;
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+    
 }
 
 @import "./partials/queries";
